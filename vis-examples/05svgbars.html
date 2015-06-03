@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script type="text/javascript" src="d3/d3.js"></script>
+</head>
+
+<body>
+
+<svg width="500", height="100"></svg>
+
+<script type="text/javascript">
+	var dataset = [10,12,14,16,18,20,22];
+	var bars = d3.select("body").select("svg")
+					.selectAll("rect")
+					.data(dataset);
+	var w = 500;
+	var h = 150;
+
+	bars.enter()
+	    .append("rect")
+		.attr("width",20)
+		.attr("fill", "teal")
+		.attr("y", function(d){return h-(d*5)}) // y is top of bar
+		.attr("x", function(d,i){return i*22;}) // 20 width, 2 space
+		.attr("height",function(d) {return ((d*5));});
+</script>
+</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script type="text/javascript" src="d3/d3.js"></script>
+</head>
+
+<body>
+<div style="height: 200px;"></div>
+<script type="text/javascript">
+	var dataset = [10,12,14,16,18,20,22];
+	var bars = d3.select("body").selectAll("div").data(dataset);
+
+	bars.style({"display": "inline-block",
+		        "background-color": "teal",
+		        "width": "20px",
+		        "margin-right": "2px"});
+
+	bars.enter()
+	    .append("div")
+		.style({"display": "inline-block",
+		        "background-color": "teal",
+		        "width": "20px",
+		        "margin-right": "2px"})
+		.style("height",function(d) {return ((d*5)+"px");});
+
+	bars.exit()
+	    .style({"display": "inline-block",
+		        "background-color": "red",
+		        "width": "20px",
+		        "margin-right": "2px"});
+</script>
+</body>

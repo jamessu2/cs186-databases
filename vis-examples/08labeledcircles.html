@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script type="text/javascript" src="d3/d3.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+</head>
+
+<body>
+
+<svg width="700", height="100"></svg>
+
+<script type="text/javascript">
+	var ratings = [
+		{'sailorId':1, 'rating':7},
+		{'sailorId':2, 'rating':10},
+		{'sailorId':3, 'rating':1},
+		{'sailorId':4, 'rating':4}
+	];
+
+	var sailors = [
+		{'name': 'Popeye', 'sailorId':1, 'age':30},
+		{'name': 'OliveOyl', 'sailorId':2, 'age':20},
+		{'name': 'SweePea', 'sailorId':3, 'age':1},
+		{'name': 'Bluto', 'sailorId':4, 'age':55},
+		{'name': 'Wimpy', 'sailorId':5, 'age':40}
+	]
+
+	// first bind sailors data to circles in the usual way
+	var circles = d3.select("body").select("svg")
+					.selectAll("circle")
+					.data(sailors);
+	var w = 500;
+	var h = 150;
+
+	// scale that maps sailor ages to colors on a colorbrewer2.org palette
+ 	var colors = d3.scale.quantize()
+    			.domain([0,d3.max(sailors, function(d){return d.age;})])
+    			.range(colorbrewer.YlGn[9]);
+
+	// assign a circle to each sailor
+	circles.enter()
+	    .append("circle")
+	    .attr("sailorId", function(d){return d.sailorId})
+	    .attr("age", function(d){return d.age})
+		.attr("fill", "teal")
+		.attr("cx", function(d,i){return 30 + i*100;}) 
+		.attr("cy", 50)
+		.attr("fill", function(d) {return colors(d.age);})
+		.attr("stroke", "grey");
+
+	// now bind ratings data to sailors for radius, making sure to join on sailorId
+	// the exit() ensures that we only draw circles for sailors with valid ratings
+	joins = d3.select("body").select("svg")
+				.selectAll("circle")
+			  	.data(ratings, function(d){return d.sailorId});
+	joins.attr("r",function(d) {return (d.rating*3);})
+	joins.exit().remove()
+
+
+	// assign a text label to each sailor
+	circles.enter()
+		.append("text")
+		.attr("font-family", "sans-serif")
+        .attr("font-size", "12px")
+        .attr("fill", "black")
+        .attr("x", function(d,i) { return 10 +i*100; })
+        .attr("y", 90)
+        .text(function(d){return d.name;});
+
+	// only draw text labels for sailors with valid ratings
+	joins2 = d3.select("body").select("svg")
+				.selectAll("text")
+				.data(ratings, function(d){return d.sailorId})
+	joins2.exit().remove()
+</script>
+</body>

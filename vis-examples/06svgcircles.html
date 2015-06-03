@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script type="text/javascript" src="d3/d3.js"></script>
+</head>
+
+<body>
+
+<svg width="700", height="100"></svg>
+
+<script type="text/javascript">
+	var dataset = [10,12,14,16,18,20,22];
+	var circles = d3.select("body").select("svg")
+					.selectAll("circle")
+					.data(dataset);
+	var w = 500;
+	var h = 150;
+
+	// this returns a function that assigns colors to indexes 0..19
+	var colors = d3.scale.category20();
+
+	circles.enter()
+	    .append("circle")
+		.attr("fill", "teal")
+		.attr("cx", function(d,i){return 30 + i*50;}) 
+		.attr("cy", 50)
+		.attr("r",function(d) {return ((d));})
+		.attr("fill", function(d,i) {return colors(i);});
+</script>
+</body>
