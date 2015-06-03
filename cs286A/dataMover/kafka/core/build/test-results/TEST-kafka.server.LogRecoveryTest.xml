@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.LogRecoveryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:44:10" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="21.614">
+  <properties/>
+  <testcase name="testHWCheckpointWithFailuresMultipleLogSegments" classname="kafka.server.LogRecoveryTest" time="7.814"/>
+  <testcase name="testHWCheckpointWithFailuresSingleLogSegment" classname="kafka.server.LogRecoveryTest" time="7.594"/>
+  <testcase name="testHWCheckpointNoFailuresMultipleLogSegments" classname="kafka.server.LogRecoveryTest" time="3.308"/>
+  <testcase name="testHWCheckpointNoFailuresSingleLogSegment" classname="kafka.server.LogRecoveryTest" time="2.898"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.protocol.types.ProtocolSerializationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:35:06" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.001">
+  <properties/>
+  <testcase name="testSimple" classname="org.apache.kafka.common.protocol.types.ProtocolSerializationTest" time="0.0"/>
+  <testcase name="testDefault" classname="org.apache.kafka.common.protocol.types.ProtocolSerializationTest" time="0.0"/>
+  <testcase name="testNulls" classname="org.apache.kafka.common.protocol.types.ProtocolSerializationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

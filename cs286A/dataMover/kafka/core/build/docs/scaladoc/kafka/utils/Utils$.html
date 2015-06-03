@@ -1,0 +1,1477 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Utils - core 0.8.3-SNAPSHOT API - kafka.utils.Utils</title>
+          <meta name="description" content="Utils - core 0.8.3 - SNAPSHOT API - kafka.utils.Utils" />
+          <meta name="keywords" content="Utils core 0.8.3 SNAPSHOT API kafka.utils.Utils" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'kafka.utils.Utils$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/object_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="kafka">kafka</a>.<a href="package.html" class="extype" name="kafka.utils">utils</a></p>
+        <h1>Utils</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Utils</span><span class="result"> extends <a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>General helper functions!</p><p>This is for general helper functions that aren't specific to Kafka logic. Things that should have been included in
+the standard library etc.</p><p>If you are making a new helper function and want to add it to this class please ensure the following:
+1. It has documentation
+2. It is the most general possible utility, not just the thing you needed in one particular place
+3. You have tests for it if it is nontrivial in any way
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="kafka.utils.Utils"><span>Utils</span></li><li class="in" name="kafka.utils.Logging"><span>Logging</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="kafka.utils.Utils#JSONEscapeString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JSONEscapeString(s:String):String"></a>
+      <a id="JSONEscapeString(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">JSONEscapeString</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="kafka.utils.Utils#abs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="abs(n:Int):Int"></a>
+      <a id="abs(Int):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">abs</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get the absolute value of the given number.</p><div class="fullcomment"><div class="comment cmt"><p>Get the absolute value of the given number. If the number is Int.MinValue return 0.
+This is different from java.lang.Math.abs or scala.math.abs in that they return Int.MinValue (!).
+</p></div></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="kafka.utils.Utils#asString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="asString(props:java.util.Properties):String"></a>
+      <a id="asString(Properties):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asString</span><span class="params">(<span name="props">props: <span class="extype" name="java.util.Properties">Properties</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Turn a properties map into a string
+</p>
+    </li><li name="kafka.utils.Utils#circularIterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="circularIterator[T](coll:Iterable[T]):Iterator[T]"></a>
+      <a id="circularIterator[T](Iterable[T]):Iterator[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">circularIterator</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="coll">coll: <span class="extype" name="scala.collection.Iterable">Iterable</span>[<span class="extype" name="kafka.utils.Utils.circularIterator.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="kafka.utils.Utils.circularIterator.T">T</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a circular (looping) iterator over a collection.</p><div class="fullcomment"><div class="comment cmt"><p>Create a circular (looping) iterator over a collection.</p></div><dl class="paramcmts block"><dt class="param">coll</dt><dd class="cmt"><p>An iterable over the underlying collection.</p></dd><dt>returns</dt><dd class="cmt"><p>A circular iterator over the collection.
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="kafka.utils.Utils#crc32" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="crc32(bytes:Array[Byte],offset:Int,size:Int):Long"></a>
+      <a id="crc32(Array[Byte],Int,Int):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">crc32</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="offset">offset: <span class="extype" name="scala.Int">Int</span></span>, <span name="size">size: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Compute the CRC32 of the segment of the byte array given by the specificed size and offset</p><div class="fullcomment"><div class="comment cmt"><p>Compute the CRC32 of the segment of the byte array given by the specificed size and offset</p></div><dl class="paramcmts block"><dt class="param">bytes</dt><dd class="cmt"><p>The bytes to checksum</p></dd><dt class="param">offset</dt><dd class="cmt"><p>the offset at which to begin checksumming</p></dd><dt class="param">size</dt><dd class="cmt"><p>the number of bytes to checksum</p></dd><dt>returns</dt><dd class="cmt"><p>The CRC32
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#crc32" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="crc32(bytes:Array[Byte]):Long"></a>
+      <a id="crc32(Array[Byte]):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">crc32</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Compute the CRC32 of the byte array</p><div class="fullcomment"><div class="comment cmt"><p>Compute the CRC32 of the byte array</p></div><dl class="paramcmts block"><dt class="param">bytes</dt><dd class="cmt"><p>The array to compute the checksum for</p></dd><dt>returns</dt><dd class="cmt"><p>The CRC32
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#createFile" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createFile(path:String):java.io.File"></a>
+      <a id="createFile(String):File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createFile</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.io.File">File</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a file with the given path</p><div class="fullcomment"><div class="comment cmt"><p>Create a file with the given path</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>The path to create</p></dd><dt>returns</dt><dd class="cmt"><p>The created file
+</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt">KafkaStorageException<p>If the file create fails</p></span></dd></dl></div>
+    </li><li name="kafka.utils.Utils#createObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createObject[T&lt;:AnyRef](className:String,args:AnyRef*):T"></a>
+      <a id="createObject[T&lt;:AnyRef](String,AnyRef*):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createObject</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="args">args: <span class="extype" name="scala.AnyRef">AnyRef</span>*</span>)</span><span class="result">: <span class="extype" name="kafka.utils.Utils.createObject.T">T</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create an instance of the class with the given class name
+</p>
+    </li><li name="kafka.utils.Utils#croak" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="croak(message:String):Unit"></a>
+      <a id="croak(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">croak</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Print an error message and shutdown the JVM</p><div class="fullcomment"><div class="comment cmt"><p>Print an error message and shutdown the JVM</p></div><dl class="paramcmts block"><dt class="param">message</dt><dd class="cmt"><p>The error message
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#daemonThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="daemonThread(name:String,fun:()=&gt;Unit):Thread"></a>
+      <a id="daemonThread(String,()⇒Unit):Thread"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">daemonThread</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fun">fun: () ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a daemon thread</p><div class="fullcomment"><div class="comment cmt"><p>Create a daemon thread</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the thread</p></dd><dt class="param">fun</dt><dd class="cmt"><p>The runction to execute in the thread</p></dd><dt>returns</dt><dd class="cmt"><p>The unstarted thread
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#daemonThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="daemonThread(name:String,runnable:Runnable):Thread"></a>
+      <a id="daemonThread(String,Runnable):Thread"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">daemonThread</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="runnable">runnable: <span class="extype" name="java.lang.Runnable">Runnable</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a daemon thread</p><div class="fullcomment"><div class="comment cmt"><p>Create a daemon thread</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the thread</p></dd><dt class="param">runnable</dt><dd class="cmt"><p>The runnable to execute in the background</p></dd><dt>returns</dt><dd class="cmt"><p>The unstarted thread
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#daemonThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="daemonThread(runnable:Runnable):Thread"></a>
+      <a id="daemonThread(Runnable):Thread"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">daemonThread</span><span class="params">(<span name="runnable">runnable: <span class="extype" name="java.lang.Runnable">Runnable</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a daemon thread</p><div class="fullcomment"><div class="comment cmt"><p>Create a daemon thread</p></div><dl class="paramcmts block"><dt class="param">runnable</dt><dd class="cmt"><p>The runnable to execute in the background</p></dd><dt>returns</dt><dd class="cmt"><p>The unstarted thread
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Logging#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(msg:=&gt;String,e:=&gt;Throwable):Unit"></a>
+      <a id="debug(⇒String,⇒Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(e:=&gt;Throwable):Any"></a>
+      <a id="debug(⇒Throwable):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(msg:=&gt;String):Unit"></a>
+      <a id="debug(⇒String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Utils#duplicates" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="duplicates[T](s:Traversable[T]):Iterable[T]"></a>
+      <a id="duplicates[T](Traversable[T]):Iterable[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">duplicates</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="scala.collection.Traversable">Traversable</span>[<span class="extype" name="kafka.utils.Utils.duplicates.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[<span class="extype" name="kafka.utils.Utils.duplicates.T">T</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns a list of duplicated items
+</p>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="kafka.utils.Utils#equal" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equal(b1:java.nio.ByteBuffer,b2:java.nio.ByteBuffer):Boolean"></a>
+      <a id="equal(ByteBuffer,ByteBuffer):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equal</span><span class="params">(<span name="b1">b1: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>, <span name="b2">b2: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Test if two byte buffers are equal.</p><div class="fullcomment"><div class="comment cmt"><p>Test if two byte buffers are equal. In this case equality means having
+the same bytes from the current position to the limit
+</p></div></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="kafka.utils.Logging#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(msg:=&gt;String,e:=&gt;Throwable):Unit"></a>
+      <a id="error(⇒String,⇒Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(e:=&gt;Throwable):Any"></a>
+      <a id="error(⇒Throwable):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(msg:=&gt;String):Unit"></a>
+      <a id="error(⇒String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Utils#evaluateDefaults" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="evaluateDefaults(props:java.util.Properties):java.util.Map[String,String]"></a>
+      <a id="evaluateDefaults(Properties):Map[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">evaluateDefaults</span><span class="params">(<span name="props">props: <span class="extype" name="java.util.Properties">Properties</span></span>)</span><span class="result">: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Turn <code>plain java.util.Properties</code> with default values into a <code>plain java.util.Map</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Turn <code>plain java.util.Properties</code> with default values into a <code>plain java.util.Map</code>. Following example
+illustrates difference from the cast
+<pre>
+val defaults = new Properties()
+defaults.put("foo", "bar")
+val props = new Properties(defaults)
+
+props.getProperty("foo") // "bar"
+props.get("foo") // null
+evaluateDefaults(props).get("foo") // "bar"
+</pre>
+</p></div><dl class="paramcmts block"><dt class="param">props</dt><dd class="cmt"><p>properties to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p>new java.util.Map instance
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Logging#fatal" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fatal(msg:=&gt;String,e:=&gt;Throwable):Unit"></a>
+      <a id="fatal(⇒String,⇒Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fatal</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#fatal" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fatal(e:=&gt;Throwable):Any"></a>
+      <a id="fatal(⇒Throwable):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fatal</span><span class="params">(<span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#fatal" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fatal(msg:=&gt;String):Unit"></a>
+      <a id="fatal(⇒String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fatal</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="kafka.utils.Utils#groupby" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="groupby[K,V](vals:Iterable[V],f:V=&gt;K):scala.collection.Map[K,List[V]]"></a>
+      <a id="groupby[K,V](Iterable[V],(V)⇒K):Map[K,List[V]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">groupby</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="params">(<span name="vals">vals: <span class="extype" name="scala.collection.Iterable">Iterable</span>[<span class="extype" name="kafka.utils.Utils.groupby.V">V</span>]</span>, <span name="f">f: (<span class="extype" name="kafka.utils.Utils.groupby.V">V</span>) ⇒ <span class="extype" name="kafka.utils.Utils.groupby.K">K</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[<span class="extype" name="kafka.utils.Utils.groupby.K">K</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="kafka.utils.Utils.groupby.V">V</span>]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Group the given values by keys extracted with the given function
+</p>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="kafka.utils.Utils#hashcode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hashcode(as:Any*):Int"></a>
+      <a id="hashcode(Any*):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashcode</span><span class="params">(<span name="as">as: <span class="extype" name="scala.Any">Any</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Compute the hash code for the given items
+</p>
+    </li><li name="kafka.utils.Utils#inLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="inLock[T](lock:java.util.concurrent.locks.Lock)(fun:=&gt;T):T"></a>
+      <a id="inLock[T](Lock)(⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inLock</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="lock">lock: <span class="extype" name="java.util.concurrent.locks.Lock">Lock</span></span>)</span><span class="params">(<span name="fun">fun: ⇒ <span class="extype" name="kafka.utils.Utils.inLock.T">T</span></span>)</span><span class="result">: <span class="extype" name="kafka.utils.Utils.inLock.T">T</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Execute the given function inside the lock
+</p>
+    </li><li name="kafka.utils.Utils#inReadLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="inReadLock[T](lock:java.util.concurrent.locks.ReadWriteLock)(fun:=&gt;T):T"></a>
+      <a id="inReadLock[T](ReadWriteLock)(⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inReadLock</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="lock">lock: <span class="extype" name="java.util.concurrent.locks.ReadWriteLock">ReadWriteLock</span></span>)</span><span class="params">(<span name="fun">fun: ⇒ <span class="extype" name="kafka.utils.Utils.inReadLock.T">T</span></span>)</span><span class="result">: <span class="extype" name="kafka.utils.Utils.inReadLock.T">T</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="kafka.utils.Utils#inWriteLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="inWriteLock[T](lock:java.util.concurrent.locks.ReadWriteLock)(fun:=&gt;T):T"></a>
+      <a id="inWriteLock[T](ReadWriteLock)(⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inWriteLock</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="lock">lock: <span class="extype" name="java.util.concurrent.locks.ReadWriteLock">ReadWriteLock</span></span>)</span><span class="params">(<span name="fun">fun: ⇒ <span class="extype" name="kafka.utils.Utils.inWriteLock.T">T</span></span>)</span><span class="result">: <span class="extype" name="kafka.utils.Utils.inWriteLock.T">T</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="kafka.utils.Logging#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(msg:=&gt;String,e:=&gt;Throwable):Unit"></a>
+      <a id="info(⇒String,⇒Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(e:=&gt;Throwable):Any"></a>
+      <a id="info(⇒Throwable):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(msg:=&gt;String):Unit"></a>
+      <a id="info(⇒String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="kafka.utils.Utils#loadProps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="loadProps(filename:String):java.util.Properties"></a>
+      <a id="loadProps(String):Properties"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">loadProps</span><span class="params">(<span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.util.Properties">Properties</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read a properties file from the given path</p><div class="fullcomment"><div class="comment cmt"><p>Read a properties file from the given path</p></div><dl class="paramcmts block"><dt class="param">filename</dt><dd class="cmt"><p>The path of the file to read
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Logging#logIdent" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logIdent:String"></a>
+      <a id="logIdent:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logIdent</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#logger" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:org.apache.log4j.Logger"></a>
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <span class="extype" name="org.apache.log4j.Logger">Logger</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#loggerName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="loggerName:String"></a>
+      <a id="loggerName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">loggerName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="kafka.utils.Utils#newThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newThread(runnable:Runnable,daemon:Boolean):Thread"></a>
+      <a id="newThread(Runnable,Boolean):Thread"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newThread</span><span class="params">(<span name="runnable">runnable: <span class="extype" name="java.lang.Runnable">Runnable</span></span>, <span name="daemon">daemon: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a new thread</p><div class="fullcomment"><div class="comment cmt"><p>Create a new thread</p></div><dl class="paramcmts block"><dt class="param">runnable</dt><dd class="cmt"><p>The work for the thread to do</p></dd><dt class="param">daemon</dt><dd class="cmt"><p>Should the thread block JVM shutdown?</p></dd><dt>returns</dt><dd class="cmt"><p>The unstarted thread
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#newThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newThread(name:String,runnable:Runnable,daemon:Boolean):Thread"></a>
+      <a id="newThread(String,Runnable,Boolean):Thread"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newThread</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="runnable">runnable: <span class="extype" name="java.lang.Runnable">Runnable</span></span>, <span name="daemon">daemon: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a new thread</p><div class="fullcomment"><div class="comment cmt"><p>Create a new thread</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the thread</p></dd><dt class="param">runnable</dt><dd class="cmt"><p>The work for the thread to do</p></dd><dt class="param">daemon</dt><dd class="cmt"><p>Should the thread block JVM shutdown?</p></dd><dt>returns</dt><dd class="cmt"><p>The unstarted thread
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#notNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notNull[V](v:V):V"></a>
+      <a id="notNull[V](V):V"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notNull</span><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="v">v: <span class="extype" name="kafka.utils.Utils.notNull.V">V</span></span>)</span><span class="result">: <span class="extype" name="kafka.utils.Utils.notNull.V">V</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Throw an exception if the given value is null, else return it.</p><div class="fullcomment"><div class="comment cmt"><p>Throw an exception if the given value is null, else return it. You can use this like:
+val myValue = Utils.notNull(expressionThatShouldntBeNull)
+</p></div></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="kafka.utils.Utils#nullOrEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nullOrEmpty(s:String):Boolean"></a>
+      <a id="nullOrEmpty(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nullOrEmpty</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Is the given string null or empty (&quot;&quot;)?
+</p>
+    </li><li name="kafka.utils.Utils#openChannel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="openChannel(file:java.io.File,mutable:Boolean):java.nio.channels.FileChannel"></a>
+      <a id="openChannel(File,Boolean):FileChannel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">openChannel</span><span class="params">(<span name="file">file: <span class="extype" name="java.io.File">File</span></span>, <span name="mutable">mutable: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="java.nio.channels.FileChannel">FileChannel</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Open a channel for the given file
+</p>
+    </li><li name="kafka.utils.Utils#parseCsvList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parseCsvList(csvList:String):Seq[String]"></a>
+      <a id="parseCsvList(String):Seq[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseCsvList</span><span class="params">(<span name="csvList">csvList: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Parse a comma separated string into a sequence of strings.</p><div class="fullcomment"><div class="comment cmt"><p>Parse a comma separated string into a sequence of strings.
+Whitespace surrounding the comma will be removed.
+</p></div></div>
+    </li><li name="kafka.utils.Utils#parseCsvMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parseCsvMap(str:String):scala.collection.Map[String,String]"></a>
+      <a id="parseCsvMap(String):Map[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseCsvMap</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">This method gets comma separated values which contains key,value pairs and returns a map of
+key value pairs.</p><div class="fullcomment"><div class="comment cmt"><p>This method gets comma separated values which contains key,value pairs and returns a map of
+key value pairs. the format of allCSVal is key1:val1, key2:val2 ....
+Also supports strings with multiple &quot;:&quot; such as IpV6 addresses, taking the last occurrence
+of the &quot;:&quot; in the pair as the split, eg a:b:c:val1, d:e:f:val2 =&gt; a:b:c -&gt; val1, d:e:f -&gt; val2
+</p></div></div>
+    </li><li name="kafka.utils.Utils#read" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="read(channel:java.nio.channels.ReadableByteChannel,buffer:java.nio.ByteBuffer):Int"></a>
+      <a id="read(ReadableByteChannel,ByteBuffer):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">read</span><span class="params">(<span name="channel">channel: <span class="extype" name="java.nio.channels.ReadableByteChannel">ReadableByteChannel</span></span>, <span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read some bytes into the provided buffer, and return the number of bytes read.</p><div class="fullcomment"><div class="comment cmt"><p>Read some bytes into the provided buffer, and return the number of bytes read. If the
+channel has been closed or we get -1 on the read for any reason, throw an EOFException
+</p></div></div>
+    </li><li name="kafka.utils.Utils#readBytes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readBytes(buffer:java.nio.ByteBuffer,offset:Int,size:Int):Array[Byte]"></a>
+      <a id="readBytes(ByteBuffer,Int,Int):Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readBytes</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>, <span name="offset">offset: <span class="extype" name="scala.Int">Int</span></span>, <span name="size">size: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read a byte array from the given offset and size in the buffer
+</p>
+    </li><li name="kafka.utils.Utils#readBytes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readBytes(buffer:java.nio.ByteBuffer):Array[Byte]"></a>
+      <a id="readBytes(ByteBuffer):Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readBytes</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read the given byte buffer into a byte array
+</p>
+    </li><li name="kafka.utils.Utils#readFileAsString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readFileAsString(path:String,charset:java.nio.charset.Charset):String"></a>
+      <a id="readFileAsString(String,Charset):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readFileAsString</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol">Charset.defaultCharset()</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Attempt to read a file as a string
+</p>
+    </li><li name="kafka.utils.Utils#readInt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readInt(bytes:Array[Byte],offset:Int):Int"></a>
+      <a id="readInt(Array[Byte],Int):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readInt</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="offset">offset: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read a big-endian integer from a byte array
+</p>
+    </li><li name="kafka.utils.Utils#readProps" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readProps(s:String,defaults:java.util.Properties):java.util.Properties"></a>
+      <a id="readProps(String,Properties):Properties"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readProps</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defaults">defaults: <span class="extype" name="java.util.Properties">Properties</span></span>)</span><span class="result">: <span class="extype" name="java.util.Properties">Properties</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read some properties with the given default values
+</p>
+    </li><li name="kafka.utils.Utils#readString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readString(buffer:java.nio.ByteBuffer,encoding:String):String"></a>
+      <a id="readString(ByteBuffer,String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readString</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>, <span name="encoding">encoding: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">Charset.defaultCharset.toString</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Translate the given buffer into a string</p><div class="fullcomment"><div class="comment cmt"><p>Translate the given buffer into a string</p></div><dl class="paramcmts block"><dt class="param">buffer</dt><dd class="cmt"><p>The buffer to translate</p></dd><dt class="param">encoding</dt><dd class="cmt"><p>The encoding to use in translating bytes to characters
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#readUnsignedInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readUnsignedInt(buffer:java.nio.ByteBuffer,index:Int):Long"></a>
+      <a id="readUnsignedInt(ByteBuffer,Int):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readUnsignedInt</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>, <span name="index">index: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read an unsigned integer from the given position without modifying the buffers
+position</p><div class="fullcomment"><div class="comment cmt"><p>Read an unsigned integer from the given position without modifying the buffers
+position</p></div><dl class="paramcmts block"><dt class="param">buffer</dt><dd class="cmt"><p>the buffer to read from</p></dd><dt class="param">index</dt><dd class="cmt"><p>the index from which to read the integer</p></dd><dt>returns</dt><dd class="cmt"><p>The integer read, as a long to avoid signedness
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#readUnsignedInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readUnsignedInt(buffer:java.nio.ByteBuffer):Long"></a>
+      <a id="readUnsignedInt(ByteBuffer):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readUnsignedInt</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Read an unsigned integer from the current position in the buffer,
+incrementing the position by 4 bytes</p><div class="fullcomment"><div class="comment cmt"><p>Read an unsigned integer from the current position in the buffer,
+incrementing the position by 4 bytes</p></div><dl class="paramcmts block"><dt class="param">buffer</dt><dd class="cmt"><p>The buffer to read from</p></dd><dt>returns</dt><dd class="cmt"><p>The integer read, as a long to avoid signedness
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#registerMBean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerMBean(mbean:Object,name:String):Boolean"></a>
+      <a id="registerMBean(AnyRef,String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerMBean</span><span class="params">(<span name="mbean">mbean: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Register the given mbean with the platform mbean server,
+unregistering any mbean that was there before.</p><div class="fullcomment"><div class="comment cmt"><p>Register the given mbean with the platform mbean server,
+unregistering any mbean that was there before. Note,
+this method will not throw an exception if the registration
+fails (since there is nothing you can do and it isn't fatal),
+instead it just returns false indicating the registration failed.</p></div><dl class="paramcmts block"><dt class="param">mbean</dt><dd class="cmt"><p>The object to register as an mbean</p></dd><dt class="param">name</dt><dd class="cmt"><p>The name to register this mbean with</p></dd><dt>returns</dt><dd class="cmt"><p>true if the registration succeeded
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#replaceSuffix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="replaceSuffix(s:String,oldSuffix:String,newSuffix:String):String"></a>
+      <a id="replaceSuffix(String,String,String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">replaceSuffix</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="oldSuffix">oldSuffix: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="newSuffix">newSuffix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Replace the given string suffix with the new suffix.</p><div class="fullcomment"><div class="comment cmt"><p>Replace the given string suffix with the new suffix. If the string doesn't end with the given suffix throw an exception.
+</p></div></div>
+    </li><li name="kafka.utils.Utils#rm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rm(file:java.io.File):Unit"></a>
+      <a id="rm(File):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rm</span><span class="params">(<span name="file">file: <span class="extype" name="java.io.File">File</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Recursively delete the given file/directory and any subfiles (if any exist)</p><div class="fullcomment"><div class="comment cmt"><p>Recursively delete the given file/directory and any subfiles (if any exist)</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>The root file at which to begin deleting
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#rm" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rm(files:Seq[String]):Unit"></a>
+      <a id="rm(Seq[String]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rm</span><span class="params">(<span name="files">files: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Recursively delete the list of files/directories and any subfiles (if any exist)</p>
+    </li><li name="kafka.utils.Utils#rm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rm(file:String):Unit"></a>
+      <a id="rm(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rm</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Recursively delete the given file/directory and any subfiles (if any exist)</p><div class="fullcomment"><div class="comment cmt"><p>Recursively delete the given file/directory and any subfiles (if any exist)</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>The root file at which to begin deleting
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#runnable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runnable(fun:=&gt;Unit):Runnable"></a>
+      <a id="runnable(⇒Unit):Runnable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runnable</span><span class="params">(<span name="fun">fun: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Runnable">Runnable</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Wrap the given function in a java.</p><div class="fullcomment"><div class="comment cmt"><p>Wrap the given function in a java.lang.Runnable</p></div><dl class="paramcmts block"><dt class="param">fun</dt><dd class="cmt"><p>A function</p></dd><dt>returns</dt><dd class="cmt"><p>A Runnable that just executes the function
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#stackTrace" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="stackTrace(e:Throwable):String"></a>
+      <a id="stackTrace(Throwable):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stackTrace</span><span class="params">(<span name="e">e: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get the stack trace from an exception as a string
+</p>
+    </li><li name="kafka.utils.Utils#swallow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="swallow(log:(Object,Throwable)=&gt;Unit,action:=&gt;Unit):Unit"></a>
+      <a id="swallow((AnyRef,Throwable)⇒Unit,⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">swallow</span><span class="params">(<span name="log">log: (<span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>, <span name="action">action: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Do the given action and log any exceptions thrown without rethrowing them</p><div class="fullcomment"><div class="comment cmt"><p>Do the given action and log any exceptions thrown without rethrowing them</p></div><dl class="paramcmts block"><dt class="param">log</dt><dd class="cmt"><p>The log method to use for logging. E.g. logger.warn</p></dd><dt class="param">action</dt><dd class="cmt"><p>The action to execute
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Logging#swallow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="swallow(action:=&gt;Unit):Unit"></a>
+      <a id="swallow(⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">swallow</span><span class="params">(<span name="action">action: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#swallowDebug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="swallowDebug(action:=&gt;Unit):Unit"></a>
+      <a id="swallowDebug(⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">swallowDebug</span><span class="params">(<span name="action">action: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#swallowError" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="swallowError(action:=&gt;Unit):Unit"></a>
+      <a id="swallowError(⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">swallowError</span><span class="params">(<span name="action">action: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#swallowInfo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="swallowInfo(action:=&gt;Unit):Unit"></a>
+      <a id="swallowInfo(⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">swallowInfo</span><span class="params">(<span name="action">action: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#swallowTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="swallowTrace(action:=&gt;Unit):Unit"></a>
+      <a id="swallowTrace(⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">swallowTrace</span><span class="params">(<span name="action">action: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#swallowWarn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="swallowWarn(action:=&gt;Unit):Unit"></a>
+      <a id="swallowWarn(⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">swallowWarn</span><span class="params">(<span name="action">action: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="kafka.utils.Logging#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(msg:=&gt;String,e:=&gt;Throwable):Unit"></a>
+      <a id="trace(⇒String,⇒Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(e:=&gt;Throwable):Any"></a>
+      <a id="trace(⇒Throwable):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(msg:=&gt;String):Unit"></a>
+      <a id="trace(⇒String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Utils#unregisterMBean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unregisterMBean(name:String):Unit"></a>
+      <a id="unregisterMBean(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unregisterMBean</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Unregister the mbean with the given name, if there is one registered</p><div class="fullcomment"><div class="comment cmt"><p>Unregister the mbean with the given name, if there is one registered</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The mbean name to unregister
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="kafka.utils.Logging#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(msg:=&gt;String,e:=&gt;Throwable):Unit"></a>
+      <a id="warn(⇒String,⇒Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(e:=&gt;Throwable):Any"></a>
+      <a id="warn(⇒Throwable):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="e">e: ⇒ <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Logging#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(msg:=&gt;String):Unit"></a>
+      <a id="warn(⇒String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></dd></dl></div>
+    </li><li name="kafka.utils.Utils#writeUnsignedInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeUnsignedInt(buffer:java.nio.ByteBuffer,index:Int,value:Long):Unit"></a>
+      <a id="writeUnsignedInt(ByteBuffer,Int,Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeUnsignedInt</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>, <span name="index">index: <span class="extype" name="scala.Int">Int</span></span>, <span name="value">value: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Write the given long value as a 4 byte unsigned integer.</p><div class="fullcomment"><div class="comment cmt"><p>Write the given long value as a 4 byte unsigned integer. Overflow is ignored.</p></div><dl class="paramcmts block"><dt class="param">buffer</dt><dd class="cmt"><p>The buffer to write to</p></dd><dt class="param">index</dt><dd class="cmt"><p>The position in the buffer at which to begin writing</p></dd><dt class="param">value</dt><dd class="cmt"><p>The value to write
+</p></dd></dl></div>
+    </li><li name="kafka.utils.Utils#writetUnsignedInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writetUnsignedInt(buffer:java.nio.ByteBuffer,value:Long):Unit"></a>
+      <a id="writetUnsignedInt(ByteBuffer,Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writetUnsignedInt</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>, <span name="value">value: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Write the given long value as a 4 byte unsigned integer.</p><div class="fullcomment"><div class="comment cmt"><p>Write the given long value as a 4 byte unsigned integer. Overflow is ignored.</p></div><dl class="paramcmts block"><dt class="param">buffer</dt><dd class="cmt"><p>The buffer to write to</p></dd><dt class="param">value</dt><dd class="cmt"><p>The value to write
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="kafka.utils.Logging">
+              <h3>Inherited from <a href="Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script>
+    </body>
+      </html>

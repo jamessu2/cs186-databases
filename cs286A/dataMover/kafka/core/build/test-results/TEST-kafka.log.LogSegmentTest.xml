@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogSegmentTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:03" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.089">
+  <properties/>
+  <testcase name="testReadOnEmptySegment" classname="kafka.log.LogSegmentTest" time="0.004"/>
+  <testcase name="testReadBeforeFirstOffset" classname="kafka.log.LogSegmentTest" time="0.002"/>
+  <testcase name="testMaxOffset" classname="kafka.log.LogSegmentTest" time="0.002"/>
+  <testcase name="testReadAfterLast" classname="kafka.log.LogSegmentTest" time="0.001"/>
+  <testcase name="testReadFromGap" classname="kafka.log.LogSegmentTest" time="0.002"/>
+  <testcase name="testTruncateFull" classname="kafka.log.LogSegmentTest" time="0.001"/>
+  <testcase name="testNextOffsetCalculation" classname="kafka.log.LogSegmentTest" time="0.002"/>
+  <testcase name="testChangeFileSuffixes" classname="kafka.log.LogSegmentTest" time="0.002"/>
+  <testcase name="testRecoveryFixesCorruptIndex" classname="kafka.log.LogSegmentTest" time="0.01"/>
+  <testcase name="testRecoveryWithCorruptMessage" classname="kafka.log.LogSegmentTest" time="0.05"/>
+  <testcase name="testTruncate" classname="kafka.log.LogSegmentTest" time="0.013"/>
+  <system-out><![CDATA[[2015-03-27 14:43:03,943] WARN Session 0x14c5d30232f0015 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:03,965] WARN Session 0x14c5d30232f0008 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

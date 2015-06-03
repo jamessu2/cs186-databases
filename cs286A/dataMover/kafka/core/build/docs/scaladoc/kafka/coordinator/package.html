@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>coordinator - core 0.8.3-SNAPSHOT API - kafka.coordinator</title>
+          <meta name="description" content="coordinator - core 0.8.3 - SNAPSHOT API - kafka.coordinator" />
+          <meta name="keywords" content="coordinator core 0.8.3 SNAPSHOT API kafka.coordinator" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'kafka.coordinator.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="kafka">kafka</a></p>
+        <h1>coordinator</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">coordinator</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="kafka.coordinator.ConsumerCoordinator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConsumerCoordinatorextendsLogging"></a>
+      <a id="ConsumerCoordinator:ConsumerCoordinator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConsumerCoordinator.html"><span class="name">ConsumerCoordinator</span></a><span class="result"> extends <a href="../utils/Logging.html" class="extype" name="kafka.utils.Logging">Logging</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Kafka coordinator handles consumer group and consumer offset management.</p>
+    </li><li name="kafka.coordinator.ConsumerRegistry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConsumerRegistryextendsAnyRef"></a>
+      <a id="ConsumerRegistry:ConsumerRegistry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConsumerRegistry.html"><span class="name">ConsumerRegistry</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Consumer registry metadata contains the following metadata:</p>
+    </li><li name="kafka.coordinator.DelayedHeartbeat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DelayedHeartbeatextendsDelayedOperation"></a>
+      <a id="DelayedHeartbeat:DelayedHeartbeat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DelayedHeartbeat.html"><span class="name">DelayedHeartbeat</span></a><span class="result"> extends <a href="../server/DelayedOperation.html" class="extype" name="kafka.server.DelayedOperation">DelayedOperation</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Delayed heartbeat operations that are added to the purgatory for session-timeout checking</p>
+    </li><li name="kafka.coordinator.DelayedJoinGroup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DelayedJoinGroupextendsDelayedOperation"></a>
+      <a id="DelayedJoinGroup:DelayedJoinGroup"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DelayedJoinGroup.html"><span class="name">DelayedJoinGroup</span></a><span class="result"> extends <a href="../server/DelayedOperation.html" class="extype" name="kafka.server.DelayedOperation">DelayedOperation</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Delayed join-group operations that are kept in the purgatory before the partition assignment completed</p>
+    </li><li name="kafka.coordinator.DelayedRebalance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DelayedRebalanceextendsDelayedOperation"></a>
+      <a id="DelayedRebalance:DelayedRebalance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DelayedRebalance.html"><span class="name">DelayedRebalance</span></a><span class="result"> extends <a href="../server/DelayedOperation.html" class="extype" name="kafka.server.DelayedOperation">DelayedOperation</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Delayed rebalance operations that are added to the purgatory when group is preparing for rebalance</p>
+    </li><li name="kafka.coordinator.GroupRegistry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GroupRegistryextendsAnyRef"></a>
+      <a id="GroupRegistry:GroupRegistry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GroupRegistry.html"><span class="name">GroupRegistry</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="kafka.coordinator.GroupState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GroupStateextendsProductwithSerializable"></a>
+      <a id="GroupState:GroupState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GroupState.html"><span class="name">GroupState</span></a><span class="params">()</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="kafka.coordinator.GroupStates" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GroupStatesextendsAnyRef"></a>
+      <a id="GroupStates:GroupStates"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="GroupStates.html"><span class="name">GroupStates</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="kafka.coordinator.HeartbeatBucket" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HeartbeatBucketextendsAnyRef"></a>
+      <a id="HeartbeatBucket:HeartbeatBucket"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HeartbeatBucket.html"><span class="name">HeartbeatBucket</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A bucket of consumers that are scheduled for heartbeat expiration.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="kafka.coordinator.Fetching" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Fetching"></a>
+      <a id="Fetching:Fetching"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Fetching$.html"><span class="name">Fetching</span></a><span class="result"> extends <a href="GroupStates.html" class="extype" name="kafka.coordinator.GroupStates">GroupStates</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Consumer group is fetching data</p>
+    </li><li name="kafka.coordinator.PrepareRebalance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PrepareRebalance"></a>
+      <a id="PrepareRebalance:PrepareRebalance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PrepareRebalance$.html"><span class="name">PrepareRebalance</span></a><span class="result"> extends <a href="GroupStates.html" class="extype" name="kafka.coordinator.GroupStates">GroupStates</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Consumer group is preparing start rebalance</p>
+    </li><li name="kafka.coordinator.UnderRebalance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnderRebalance"></a>
+      <a id="UnderRebalance:UnderRebalance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UnderRebalance$.html"><span class="name">UnderRebalance</span></a><span class="result"> extends <a href="GroupStates.html" class="extype" name="kafka.coordinator.GroupStates">GroupStates</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Consumer group is under rebalance</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script>
+    </body>
+      </html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.OffsetCommitTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:44:31" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="12.783">
+  <properties/>
+  <testcase name="testOffsetExpiration" classname="kafka.server.OffsetCommitTest" time="3.293"/>
+  <testcase name="testLargeMetadataPayload" classname="kafka.server.OffsetCommitTest" time="2.263"/>
+  <testcase name="testNonExistingTopicOffsetCommit" classname="kafka.server.OffsetCommitTest" time="2.07"/>
+  <testcase name="testUpdateOffsets" classname="kafka.server.OffsetCommitTest" time="2.273"/>
+  <testcase name="testCommitAndFetchOffsets" classname="kafka.server.OffsetCommitTest" time="2.883"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

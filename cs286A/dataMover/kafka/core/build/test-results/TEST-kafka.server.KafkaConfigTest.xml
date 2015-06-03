@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.KafkaConfigTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:59" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.014">
+  <properties/>
+  <testcase name="testAdvertiseDefaults" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testLogRollTimeMsProvided" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testLogRollTimeBothMsAndHoursProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRollTimeNoConfigProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testDefaultCompressionType" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testValidCompressionType" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testInvalidCompressionType" classname="kafka.server.KafkaConfigTest" time="0.002"/>
+  <testcase name="testLogRetentionTimeHoursProvided" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testLogRetentionTimeMinutesProvided" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testLogRetentionTimeMsProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRetentionTimeNoConfigProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRetentionTimeBothMinutesAndHoursProvided" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testLogRetentionTimeBothMinutesAndMsProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testAdvertiseConfigured" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testUncleanLeaderElectionDefault" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testUncleanElectionDisabled" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testUncleanElectionEnabled" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testUncleanElectionInvalid" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unit.kafka.KafkaTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:45:02" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.028">
+  <properties/>
+  <testcase name="testGetKafkaConfigFromArgsWrongSetValue" classname="unit.kafka.KafkaTest" time="0.004"/>
+  <testcase name="testGetKafkaConfigFromArgsNonArgsAtTheEnd" classname="unit.kafka.KafkaTest" time="0.015"/>
+  <testcase name="testGetKafkaConfigFromArgsNonArgsOnly" classname="unit.kafka.KafkaTest" time="0.002"/>
+  <testcase name="testGetKafkaConfigFromArgsNonArgsAtTheBegging" classname="unit.kafka.KafkaTest" time="0.002"/>
+  <testcase name="testGetKafkaConfigFromArgs" classname="unit.kafka.KafkaTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid command line properties: a=b=c
+Found non argument parameters: broker.id=2
+Option                                  Description                            
+------                                  -----------                            
+--override                              Optional property that should override 
+                                          values set in server.properties file 
+Found non argument parameters: broker.id=1,broker.id=2
+Option                                  Description                            
+------                                  -----------                            
+--override                              Optional property that should override 
+                                          values set in server.properties file 
+Found non argument parameters: broker.id=1
+Option                                  Description                            
+------                                  -----------                            
+--override                              Optional property that should override 
+                                          values set in server.properties file 
+]]></system-err>
+</testsuite>

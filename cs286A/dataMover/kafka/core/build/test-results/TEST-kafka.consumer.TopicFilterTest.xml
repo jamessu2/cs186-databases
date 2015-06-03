@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.consumer.TopicFilterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:40:22" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.005">
+  <properties/>
+  <testcase name="testBlacklists" classname="kafka.consumer.TopicFilterTest" time="0.001"/>
+  <testcase name="testWhitelists" classname="kafka.consumer.TopicFilterTest" time="0.001"/>
+  <testcase name="testWildcardTopicCountGetTopicCountMapEscapeJson" classname="kafka.consumer.TopicFilterTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

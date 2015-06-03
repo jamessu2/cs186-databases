@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.producer.AsyncProducerTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:07" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="6.777">
+  <properties/>
+  <testcase name="testProducerQueueSize" classname="kafka.producer.AsyncProducerTest" time="5.551"/>
+  <testcase name="testProduceAfterClosed" classname="kafka.producer.AsyncProducerTest" time="0.014"/>
+  <testcase name="testBatchSize" classname="kafka.producer.AsyncProducerTest" time="0.096"/>
+  <testcase name="testQueueTimeExpired" classname="kafka.producer.AsyncProducerTest" time="0.304"/>
+  <testcase name="testPartitionAndCollateEvents" classname="kafka.producer.AsyncProducerTest" time="0.002"/>
+  <testcase name="testSerializeEvents" classname="kafka.producer.AsyncProducerTest" time="0.004"/>
+  <testcase name="testNoBroker" classname="kafka.producer.AsyncProducerTest" time="0.423"/>
+  <testcase name="testIncompatibleEncoder" classname="kafka.producer.AsyncProducerTest" time="0.014"/>
+  <testcase name="testRandomPartitioner" classname="kafka.producer.AsyncProducerTest" time="0.002"/>
+  <testcase name="testFailedSendRetryLogic" classname="kafka.producer.AsyncProducerTest" time="0.342"/>
+  <testcase name="testJavaProducer" classname="kafka.producer.AsyncProducerTest" time="0.019"/>
+  <testcase name="testInvalidConfiguration" classname="kafka.producer.AsyncProducerTest" time="0.002"/>
+  <testcase name="testInvalidPartition" classname="kafka.producer.AsyncProducerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

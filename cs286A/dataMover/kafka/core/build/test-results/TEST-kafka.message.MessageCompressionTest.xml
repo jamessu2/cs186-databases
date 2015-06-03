@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.message.MessageCompressionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:07" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.008">
+  <properties/>
+  <testcase name="testSimpleCompressDecompress" classname="kafka.message.MessageCompressionTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

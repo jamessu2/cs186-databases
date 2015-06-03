@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.LeaderElectionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:59" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="5.914">
+  <properties/>
+  <testcase name="testLeaderElectionWithStaleControllerEpoch" classname="kafka.server.LeaderElectionTest" time="2.283"/>
+  <testcase name="testLeaderElectionAndEpoch" classname="kafka.server.LeaderElectionTest" time="3.631"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

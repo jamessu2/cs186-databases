@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.producer.ProducerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:14" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="15.756">
+  <properties/>
+  <testcase name="testUpdateBrokerPartitionInfo" classname="kafka.producer.ProducerTest" time="3.163"/>
+  <testcase name="testSendToNewTopic" classname="kafka.producer.ProducerTest" time="2.279"/>
+  <testcase name="testSendWithDeadBroker" classname="kafka.producer.ProducerTest" time="4.496"/>
+  <testcase name="testAsyncSendCanCorrectlyFailWithTimeout" classname="kafka.producer.ProducerTest" time="3.953"/>
+  <testcase name="testSendNullMessage" classname="kafka.producer.ProducerTest" time="1.865"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

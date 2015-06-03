@@ -1,0 +1,389 @@
+// Licensed to the Apache Software Foundation (ASF) under one or more
+// contributor license agreements.  See the NOTICE file distributed with
+// this work for additional information regarding copyright ownership.
+// The ASF licenses this file to You under the Apache License, Version 2.0
+// (the "License"); you may not use this file except in compliance with
+// the License.  You may obtain a copy of the License at
+// 
+//    http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  apply from: file('gradle/buildscript.gradle'), to: buildscript
+}
+
+def slf4jlog4j='org.slf4j:slf4j-log4j12:1.7.6'
+
+allprojects {
+  apply plugin: 'idea'
+  repositories {
+    mavenCentral()
+  }
+}
+
+ext {
+    gradleVersion = "2.0"
+}
+
+def isVerificationRequired(project) {
+    project.gradle.startParameter.taskNames.any { it.contains("upload") }
+}
+
+apply from: file('wrapper.gradle')
+apply from: file('gradle/license.gradle')
+apply from: file('scala.gradle')
+
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'eclipse'
+  apply plugin: 'maven'
+  apply plugin: 'signing'
+
+  licenseTest.onlyIf { isVerificationRequired(project) }
+
+  uploadArchives {
+    repositories {
+      signing {
+          if (isVerificationRequired(project)) {
+              sign configurations.archives
+
+              // To test locally, replace mavenUrl in ~/.gradle/gradle.properties to file://localhost/tmp/myRepo/
+              mavenDeployer {
+                  beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+                  repository(url: "${mavenUrl}") {
+                      authentication(userName: "${mavenUsername}", password: "${mavenPassword}")
+                  }
+                  afterEvaluate {
+                      pom.artifactId = "${archivesBaseName}"
+                      pom.project {
+                          name 'Apache Kafka'
+                          packaging 'jar'
+                          url 'http://kafka.apache.org'
+                          licenses {
+                              license {
+                                  name 'The Apache Software License, Version 2.0'
+                                  url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                                  distribution 'repo'
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    }
+  }
+
+  jar {
+    from '../LICENSE'
+    from '../NOTICE'
+  }
+
+  task srcJar(type:Jar) {
+    classifier = 'sources'
+    from '../LICENSE'
+    from '../NOTICE'
+    from sourceSets.main.java
+  }
+
+  task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier 'javadoc'
+    from '../LICENSE'
+    from '../NOTICE'
+    from javadoc.destinationDir
+  }
+
+  task docsJar(dependsOn: javadocJar)
+
+  artifacts {
+    archives srcJar
+    archives javadocJar
+  }
+  
+  plugins.withType(ScalaPlugin) {
+    //source jar should also contain scala source:
+    srcJar.from sourceSets.main.scala
+
+    task scaladocJar(type:Jar) {
+      classifier = 'scaladoc'
+      from '../LICENSE'
+      from '../NOTICE'
+      from scaladoc
+    }
+
+    //documentation task should also trigger building scala doc jar
+    docsJar.dependsOn scaladocJar
+
+    artifacts {
+      archives scaladocJar
+    }
+  }
+
+  tasks.withType(ScalaCompile) {
+    scalaCompileOptions.useAnt = false
+
+    configure(scalaCompileOptions.forkOptions) {
+      memoryMaximumSize = '1g'
+      jvmArgs = ['-XX:MaxPermSize=512m']
+    }
+  }
+}
+
+for ( sv in ['2_9_1', '2_9_2', '2_10_4', '2_11_5'] ) {
+  String svInDot = sv.replaceAll( "_", ".")
+
+  tasks.create(name: "jar_core_${sv}", type: GradleBuild) {
+    buildFile = './build.gradle'
+    tasks = ['core:jar']
+    startParameter.projectProperties = [scalaVersion: "${svInDot}"]
+  }
+
+  tasks.create(name: "test_core_${sv}", type: GradleBuild) {
+    buildFile = './build.gradle'
+    tasks = ['core:test']
+    startParameter.projectProperties = [scalaVersion: "${svInDot}"]
+  }
+
+  tasks.create(name: "srcJar_${sv}", type: GradleBuild) {
+    buildFile = './build.gradle'
+    tasks = ['core:srcJar']
+    startParameter.projectProperties = [scalaVersion: "${svInDot}"]
+  }
+
+  tasks.create(name: "docsJar_${sv}", type: GradleBuild) {
+    buildFile = './build.gradle'
+    tasks = ['core:docsJar']
+    startParameter.projectProperties = [scalaVersion: "${svInDot}"]
+  }
+
+  tasks.create(name: "releaseTarGz_${sv}", type: GradleBuild) {
+    buildFile = './build.gradle'
+    tasks = ['releaseTarGz']
+    startParameter.projectProperties = [scalaVersion: "${svInDot}"]
+  }
+
+  tasks.create(name: "uploadCoreArchives_${sv}", type: GradleBuild) {
+    buildFile = './build.gradle'
+    tasks = ['core:uploadArchives']
+    startParameter.projectProperties = [scalaVersion: "${svInDot}"]
+  }
+}
+
+tasks.create(name: "jarAll", dependsOn: ['jar_core_2_9_1', 'jar_core_2_9_2', 'jar_core_2_10_4', 'jar_core_2_11_5', 'clients:jar', 'examples:jar', 'contrib:hadoop-consumer:jar', 'contrib:hadoop-producer:jar']) {
+}
+
+tasks.create(name: "srcJarAll", dependsOn: ['srcJar_2_9_1', 'srcJar_2_9_2', 'srcJar_2_10_4', 'srcJar_2_11_5', 'clients:srcJar', 'examples:srcJar', 'contrib:hadoop-consumer:srcJar', 'contrib:hadoop-producer:srcJar']) { }
+
+tasks.create(name: "docsJarAll", dependsOn: ['docsJar_2_9_1', 'docsJar_2_9_2', 'docsJar_2_10_4', 'docsJar_2_11_5', 'clients:docsJar', 'examples:docsJar', 'contrib:hadoop-consumer:docsJar', 'contrib:hadoop-producer:docsJar']) { }
+
+tasks.create(name: "testAll", dependsOn: ['test_core_2_9_1', 'test_core_2_9_2', 'test_core_2_10_4', 'test_core_2_11_5', 'clients:test']) {
+}
+
+tasks.create(name: "releaseTarGzAll", dependsOn: ['releaseTarGz_2_9_1', 'releaseTarGz_2_9_2', 'releaseTarGz_2_10_4', 'releaseTarGz_2_11_5']) {
+}
+
+tasks.create(name: "uploadArchivesAll", dependsOn: ['uploadCoreArchives_2_9_1', 'uploadCoreArchives_2_9_2', 'uploadCoreArchives_2_10_4', 'uploadCoreArchives_2_11_5', 'clients:uploadArchives', 'examples:uploadArchives', 'contrib:hadoop-consumer:uploadArchives', 'contrib:hadoop-producer:uploadArchives']) {
+}
+
+project(':core') {
+  println "Building project 'core' with Scala version $scalaVersion"
+
+  apply plugin: 'scala'
+  archivesBaseName = "kafka_${baseScalaVersion}"
+
+  def (major, minor, trivial) = scalaVersion.tokenize('.')
+
+  dependencies {
+    compile project(':clients')
+    compile "org.scala-lang:scala-library:$scalaVersion"
+    compile 'org.apache.zookeeper:zookeeper:3.4.6'
+    compile 'com.101tec:zkclient:0.3'
+    compile 'com.yammer.metrics:metrics-core:2.2.0'
+    compile 'net.sf.jopt-simple:jopt-simple:3.2'
+    compile 'org.mongodb:mongo-java-driver:3.0.0'
+
+    testCompile 'junit:junit:4.6'
+    testCompile 'org.easymock:easymock:3.0'
+    testCompile 'org.objenesis:objenesis:1.2'
+    testCompile project(':clients')
+    if (scalaVersion.startsWith('2.10')) {
+      testCompile 'org.scalatest:scalatest_2.10:1.9.1'
+    } else if (scalaVersion.startsWith('2.11')) {
+      compile 'org.scala-lang.modules:scala-xml_2.11:1.0.2'
+      compile 'org.scala-lang.modules:scala-parser-combinators_2.11:1.0.2'
+      testCompile "org.scalatest:scalatest_2.11:2.2.0"
+    } else {
+      testCompile "org.scalatest:scalatest_$scalaVersion:1.8"
+    }
+    testRuntime "$slf4jlog4j"
+
+    zinc 'com.typesafe.zinc:zinc:0.3.1'
+  }
+
+  configurations {
+    // manually excludes some unnecessary dependencies
+    compile.exclude module: 'javax'
+    compile.exclude module: 'jline'
+    compile.exclude module: 'jms'
+    compile.exclude module: 'jmxri'
+    compile.exclude module: 'jmxtools'
+    compile.exclude module: 'mail'
+    compile.exclude module: 'netty'
+  }
+
+  tasks.create(name: "copyDependantLibs", type: Copy) {
+    from (configurations.testRuntime) {
+      include('slf4j-log4j12*')
+    }
+    from (configurations.runtime) {
+      exclude('kafka-clients*')
+    }
+    into "$buildDir/dependant-libs-${scalaVersion}"
+  }
+
+  tasks.create(name: "releaseTarGz", dependsOn: configurations.archives.artifacts, type: Tar) { 
+    into "kafka_${baseScalaVersion}-${version}"
+    compression = Compression.GZIP 
+    from(project.file("../bin")) { into "bin/" }
+    from(project.file("../config")) { into "config/" }
+    from '../LICENSE'
+    from '../NOTICE'
+    from(configurations.runtime) { into("libs/") }
+    from(configurations.archives.artifacts.files) { into("libs/") }
+  }
+
+  jar {
+    dependsOn 'copyDependantLibs'
+  }
+
+  jar.manifest {
+    attributes(
+      'Version': "${version}"
+    )
+  }
+
+  task testJar(type: Jar) {
+    classifier = 'test'
+    from sourceSets.test.output
+  }
+
+  test {
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = 'full'
+    }
+  }
+
+  artifacts {
+    archives testJar
+  }
+}
+
+project(':contrib:hadoop-consumer') {
+  archivesBaseName = "kafka-hadoop-consumer"
+
+  dependencies {
+    compile project(':core')
+    compile "org.apache.avro:avro:1.4.0"
+    compile "org.apache.pig:pig:0.8.0"
+    compile "commons-logging:commons-logging:1.0.4"
+    compile "org.codehaus.jackson:jackson-core-asl:1.5.5"
+    compile "org.codehaus.jackson:jackson-mapper-asl:1.5.5"
+    compile "org.apache.hadoop:hadoop-core:0.20.2"
+  }
+
+  configurations {
+    // manually excludes some unnecessary dependencies
+    compile.exclude module: 'javax'
+    compile.exclude module: 'jms'
+    compile.exclude module: 'jmxri'
+    compile.exclude module: 'jmxtools'
+    compile.exclude module: 'mail'
+    compile.exclude module: 'netty'
+  }
+}
+
+project(':contrib:hadoop-producer') {
+  archivesBaseName = "kafka-hadoop-producer"
+
+  dependencies {
+    compile project(':core')
+    compile("org.apache.avro:avro:1.4.0") { force = true }
+    compile "org.apache.pig:pig:0.8.0"
+    compile "commons-logging:commons-logging:1.0.4"
+    compile "org.codehaus.jackson:jackson-core-asl:1.5.5"
+    compile "org.codehaus.jackson:jackson-mapper-asl:1.5.5"
+    compile "org.apache.hadoop:hadoop-core:0.20.2"
+    compile "org.apache.pig:piggybank:0.12.0"
+  }
+
+  configurations {
+    // manually excludes some unnecessary dependencies
+    compile.exclude module: 'javax'
+    compile.exclude module: 'jms'
+    compile.exclude module: 'jmxri'
+    compile.exclude module: 'jmxtools'
+    compile.exclude module: 'mail'
+    compile.exclude module: 'netty'
+  }
+}
+
+project(':examples') {
+  archivesBaseName = "kafka-examples"
+
+  dependencies {
+    compile project(':core')
+  }
+
+}
+
+project(':clients') {
+  apply plugin: 'checkstyle'
+  archivesBaseName = "kafka-clients"
+
+  dependencies {
+    compile "org.slf4j:slf4j-api:1.7.6"
+    compile 'org.xerial.snappy:snappy-java:1.1.1.6'
+    compile 'net.jpountz.lz4:lz4:1.2.0'
+
+    testCompile 'com.novocode:junit-interface:0.9'
+    testRuntime "$slf4jlog4j"
+  }
+
+  task testJar(type: Jar) {
+    classifier = 'test'
+    from sourceSets.test.output
+  }
+
+  test {
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = 'full'
+    }
+  }
+
+  javadoc {
+    include "**/org/apache/kafka/clients/consumer/*"
+    include "**/org/apache/kafka/clients/producer/*"
+    include "**/org/apache/kafka/common/*"
+    include "**/org/apache/kafka/common/errors/*"
+    include "**/org/apache/kafka/common/serialization/*"
+  }
+
+  artifacts {
+    archives testJar
+  }
+  
+  checkstyle {
+     configFile = new File(rootDir, "checkstyle/checkstyle.xml")
+  }
+  test.dependsOn('checkstyleMain', 'checkstyleTest')
+}

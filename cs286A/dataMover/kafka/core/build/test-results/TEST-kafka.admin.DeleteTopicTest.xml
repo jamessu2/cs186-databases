@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.DeleteTopicTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:37:04" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="47.969">
+  <properties/>
+  <testcase name="testPartitionReassignmentDuringDeleteTopic" classname="kafka.admin.DeleteTopicTest" time="4.988"/>
+  <testcase name="testDeleteNonExistingTopic" classname="kafka.admin.DeleteTopicTest" time="2.109"/>
+  <testcase name="testDeleteTopicWithCleaner" classname="kafka.admin.DeleteTopicTest" time="18.169"/>
+  <testcase name="testDeleteTopicDuringAddPartition" classname="kafka.admin.DeleteTopicTest" time="3.984"/>
+  <testcase name="testAddPartitionDuringDeleteTopic" classname="kafka.admin.DeleteTopicTest" time="2.917"/>
+  <testcase name="testRecreateTopicAfterDeletion" classname="kafka.admin.DeleteTopicTest" time="4.161"/>
+  <testcase name="testResumeDeleteTopicOnControllerFailover" classname="kafka.admin.DeleteTopicTest" time="4.562"/>
+  <testcase name="testDeleteTopicWithAllAliveReplicas" classname="kafka.admin.DeleteTopicTest" time="2.723"/>
+  <testcase name="testResumeDeleteTopicWithRecoveredFollower" classname="kafka.admin.DeleteTopicTest" time="4.355"/>
+  <system-out><![CDATA[[2015-03-27 14:37:06,279] ERROR [PartitionsReassignedListener on 0]: Skipping reassignment of partition [test,0] for topic test since it is currently being deleted (kafka.controller.PartitionsReassignedListener:97)
+ERROR: Assigned replicas (0,1,2) don't match the list of replicas for reassignment (1,2,3) for partition [test,0]
+[2015-03-27 14:37:34,193] ERROR [AddPartitionsListener on 0]: Skipping adding partitions 1 for topic test since it is currently being deleted (kafka.controller.PartitionStateMachine$AddPartitionsListener:97)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

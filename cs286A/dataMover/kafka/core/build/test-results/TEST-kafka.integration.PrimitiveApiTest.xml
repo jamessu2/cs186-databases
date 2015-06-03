@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.integration.PrimitiveApiTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:41:01" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="12.069">
+  <properties/>
+  <testcase name="testProduceAndMultiFetch" classname="kafka.integration.PrimitiveApiTest" time="1.873"/>
+  <testcase name="testMultiProduce" classname="kafka.integration.PrimitiveApiTest" time="1.649"/>
+  <testcase name="testFetchRequestCanProperlySerialize" classname="kafka.integration.PrimitiveApiTest" time="0.857"/>
+  <testcase name="testEmptyFetchRequest" classname="kafka.integration.PrimitiveApiTest" time="0.846"/>
+  <testcase name="testDefaultEncoderProducerAndFetchWithCompression" classname="kafka.integration.PrimitiveApiTest" time="2.07"/>
+  <testcase name="testPipelinedProduceRequests" classname="kafka.integration.PrimitiveApiTest" time="1.653"/>
+  <testcase name="testConsumerEmptyTopic" classname="kafka.integration.PrimitiveApiTest" time="1.051"/>
+  <testcase name="testDefaultEncoderProducerAndFetch" classname="kafka.integration.PrimitiveApiTest" time="2.07"/>
+  <system-out><![CDATA[[2015-03-27 14:41:07,000] ERROR Failed to collate messages by topic, partition due to: Failed to fetch topic metadata for topic: test-topic (kafka.producer.async.DefaultEventHandler:97)
+[2015-03-27 14:41:11,773] ERROR Failed to collate messages by topic, partition due to: Failed to fetch topic metadata for topic: test-topic (kafka.producer.async.DefaultEventHandler:97)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

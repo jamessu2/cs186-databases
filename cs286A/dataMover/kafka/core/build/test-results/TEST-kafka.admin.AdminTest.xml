@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.AdminTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:36:19" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="23.873">
+  <properties/>
+  <testcase name="testManualReplicaAssignment" classname="kafka.admin.AdminTest" time="0.025"/>
+  <testcase name="testPartitionReassignmentNonOverlappingReplicas" classname="kafka.admin.AdminTest" time="3.965"/>
+  <testcase name="testReplicaAssignment" classname="kafka.admin.AdminTest" time="0.011"/>
+  <testcase name="testReassigningNonExistingPartition" classname="kafka.admin.AdminTest" time="3.561"/>
+  <testcase name="testBasicPreferredReplicaElection" classname="kafka.admin.AdminTest" time="3.579"/>
+  <testcase name="testShutdownBroker" classname="kafka.admin.AdminTest" time="2.952"/>
+  <testcase name="testPartitionReassignmentWithLeaderInNewReplicas" classname="kafka.admin.AdminTest" time="3.751"/>
+  <testcase name="testTopicCreationInZK" classname="kafka.admin.AdminTest" time="0.107"/>
+  <testcase name="testPartitionReassignmentWithLeaderNotInNewReplicas" classname="kafka.admin.AdminTest" time="3.145"/>
+  <testcase name="testTopicConfigChange" classname="kafka.admin.AdminTest" time="1.062"/>
+  <testcase name="testResumePartitionReassignmentThatWasCompleted" classname="kafka.admin.AdminTest" time="1.703"/>
+  <testcase name="testPreferredReplicaJsonData" classname="kafka.admin.AdminTest" time="0.01"/>
+  <system-out><![CDATA[[2015-03-27 14:36:23,683] ERROR Skipping reassignment of partition [test,0] since it doesn't exist (kafka.admin.ReassignPartitionsCommand:97)
+[2015-03-27 14:36:28,434] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn:357)
+EndOfStreamException: Unable to read additional data from client sessionid 0x14c5d2a2c150001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

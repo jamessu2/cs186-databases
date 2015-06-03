@@ -1,0 +1,23 @@
+
+* to compile changes:
+  - run "./gradlew build"
+  - unpack gobblin-dist.tar.gz "tar -zxvf gobblin-dist.tar.gz"
+
+* command to run gobblin from gobblin-dist/:
+bin/gobblin-standalone.sh start --workdir ../test_workdir --conf ../test_config
+
+* stdout goes into nohup.out
+
+* need to import apache commons
+  - in gobblin-example/build.gradle file, add a line to compile commons-io
+
+* AvroDataWriterBuilder gets instantiated by gobblin-runtime/TaskContext.java:getDataWriterBuilder()
+
+* In order to change the output from pure AVRO to the custom scheme defined by the repo group,
+  - add a new case for "META_REPO" to the switch case for destination in gobblin-core/writer/AvroDataWriterBuilder.java
+  - create a new DataWriter class (maybe just extend AvroHdfsDataWriter and override the write() method)
+  - change line "this.writer.append(record)" to something that writes to this.stagingFile in the new format
+
+* need to run "source run_gobblin_standalone.sh" so that the GOBBLIN_WORK_DIR and GOBBLIN_JOB_CONFIG_DIR
+  environment variables become global. otherwise, when you try to run "stop", it won't be able to find
+  the .gobblin-pid file

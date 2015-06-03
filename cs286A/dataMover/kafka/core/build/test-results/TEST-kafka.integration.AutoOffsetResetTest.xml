@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.integration.AutoOffsetResetTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:40:51" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="8.592">
+  <properties/>
+  <testcase name="testResetToEarliestWhenOffsetTooLow" classname="kafka.integration.AutoOffsetResetTest" time="1.249"/>
+  <testcase name="testResetToLatestWhenOffsetTooHigh" classname="kafka.integration.AutoOffsetResetTest" time="3.049"/>
+  <testcase name="testResetToEarliestWhenOffsetTooHigh" classname="kafka.integration.AutoOffsetResetTest" time="1.242"/>
+  <testcase name="testResetToLatestWhenOffsetTooLow" classname="kafka.integration.AutoOffsetResetTest" time="3.052"/>
+  <system-out><![CDATA[[2015-03-27 14:40:52,059] ERROR Closing socket for /127.0.0.1 because of error (kafka.network.Processor:103)
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at kafka.utils.Utils$.read(Utils.scala:380)
+	at kafka.network.BoundedByteBufferReceive.readFrom(BoundedByteBufferReceive.scala:54)
+	at kafka.network.Processor.read(SocketServer.scala:444)
+	at kafka.network.Processor.run(SocketServer.scala:340)
+	at java.lang.Thread.run(Thread.java:744)
+[2015-03-27 14:40:53,203] ERROR [ConsumerFetcherThread-default_group_consumer-0-0], Current offset 10000 for partition [test_topic,0] out of range; reset offset to 10 (kafka.consumer.ConsumerFetcherThread:97)
+[2015-03-27 14:40:55,299] ERROR Closing socket for /127.0.0.1 because of error (kafka.network.Processor:103)
+java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487)
+	at kafka.api.PartitionDataSend.writeTo(FetchResponse.scala:70)
+	at kafka.network.MultiSend.writeTo(Transmission.scala:101)
+	at kafka.api.TopicDataSend.writeTo(FetchResponse.scala:127)
+	at kafka.network.MultiSend.writeTo(Transmission.scala:101)
+	at kafka.api.FetchResponseSend.writeTo(FetchResponse.scala:231)
+	at kafka.network.Processor.write(SocketServer.scala:472)
+	at kafka.network.Processor.run(SocketServer.scala:342)
+	at java.lang.Thread.run(Thread.java:744)
+[2015-03-27 14:40:56,253] ERROR [ConsumerFetcherThread-default_group_consumer-0-0], Current offset 10000 for partition [test_topic,0] out of range; reset offset to 0 (kafka.consumer.ConsumerFetcherThread:97)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:03" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="1.139">
+  <properties/>
+  <testcase name="testCompressedMessages" classname="kafka.log.LogTest" time="0.004"/>
+  <testcase name="testThatGarbageCollectingSegmentsDoesntChangeOffset" classname="kafka.log.LogTest" time="0.019"/>
+  <testcase name="testMessageSetSizeCheck" classname="kafka.log.LogTest" time="0.002"/>
+  <testcase name="testCompactedTopicConstraints" classname="kafka.log.LogTest" time="0.004"/>
+  <testcase name="testReadAtLogGap" classname="kafka.log.LogTest" time="0.004"/>
+  <testcase name="testReadOutOfRange" classname="kafka.log.LogTest" time="0.004"/>
+  <testcase name="testLogRolls" classname="kafka.log.LogTest" time="0.038"/>
+  <testcase name="testIndexResizingAtTruncation" classname="kafka.log.LogTest" time="0.006"/>
+  <testcase name="testBogusIndexSegmentsAreRemoved" classname="kafka.log.LogTest" time="0.005"/>
+  <testcase name="testMessageSizeCheck" classname="kafka.log.LogTest" time="0.003"/>
+  <testcase name="testLogRecoversToCorrectOffset" classname="kafka.log.LogTest" time="0.051"/>
+  <testcase name="testIndexRebuild" classname="kafka.log.LogTest" time="0.127"/>
+  <testcase name="testTruncateTo" classname="kafka.log.LogTest" time="0.007"/>
+  <testcase name="testCorruptLog" classname="kafka.log.LogTest" time="0.466"/>
+  <testcase name="testCleanShutdownFile" classname="kafka.log.LogTest" time="0.009"/>
+  <testcase name="testParseTopicPartitionName" classname="kafka.log.LogTest" time="0.001"/>
+  <testcase name="testParseTopicPartitionNameForEmptyName" classname="kafka.log.LogTest" time="0.001"/>
+  <testcase name="testParseTopicPartitionNameForNull" classname="kafka.log.LogTest" time="0.001"/>
+  <testcase name="testParseTopicPartitionNameForMissingSeparator" classname="kafka.log.LogTest" time="0.001"/>
+  <testcase name="testParseTopicPartitionNameForMissingTopic" classname="kafka.log.LogTest" time="0.001"/>
+  <testcase name="testParseTopicPartitionNameForMissingPartition" classname="kafka.log.LogTest" time="0.001"/>
+  <testcase name="testOpenDeletesObsoleteFiles" classname="kafka.log.LogTest" time="0.037"/>
+  <testcase name="testAppendMessageWithNullPayload" classname="kafka.log.LogTest" time="0.002"/>
+  <testcase name="testTimeBasedLogRollJitter" classname="kafka.log.LogTest" time="0.004"/>
+  <testcase name="testSizeBasedLogRoll" classname="kafka.log.LogTest" time="0.005"/>
+  <testcase name="testLoadEmptyLog" classname="kafka.log.LogTest" time="0.003"/>
+  <testcase name="testAppendAndReadWithSequentialOffsets" classname="kafka.log.LogTest" time="0.032"/>
+  <testcase name="testAppendAndReadWithNonSequentialOffsets" classname="kafka.log.LogTest" time="0.064"/>
+  <testcase name="testReopenThenTruncate" classname="kafka.log.LogTest" time="0.187"/>
+  <testcase name="testAsyncDelete" classname="kafka.log.LogTest" time="0.038"/>
+  <testcase name="testTimeBasedLogRoll" classname="kafka.log.LogTest" time="0.008"/>
+  <system-out><![CDATA[[2015-03-27 14:43:03,979] WARN Session 0x14c5d30232f000a for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:04,197] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000000.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,198] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000005.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,199] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000010.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,200] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000015.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,200] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000020.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,201] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000025.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,202] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000030.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,203] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000035.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,204] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000040.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,204] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000045.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,205] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000050.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,206] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000055.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,207] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000060.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,207] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000065.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,208] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000070.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,209] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000075.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,210] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000080.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,211] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000085.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,212] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000090.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,213] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000095.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,214] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000100.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,214] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000105.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,215] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000110.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,216] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000115.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,217] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000120.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,218] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000125.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,218] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000130.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,219] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000135.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,220] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000140.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,221] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000145.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,221] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000150.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,222] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000155.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,223] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000160.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,224] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000165.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,224] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000170.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,225] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000175.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,226] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000180.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,227] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000185.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,228] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000190.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,228] ERROR Could not find index file corresponding to log file /var/folders/jb/knny4m3j7s78p23s6nbf7m3r0000gn/T/kafka-817543/00000000000000000195.log, rebuilding index... (kafka.log.Log:97)
+[2015-03-27 14:43:04,259] WARN Session 0x14c5d30232f0016 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:04,266] WARN Session 0x14c5d30232f0014 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:04,310] WARN Session 0x14c5d30232f0012 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:04,402] WARN Session 0x14c5d30232f000e for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:04,521] WARN Session 0x14c5d30232f0004 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:04,684] WARN Session 0x14c5d30232f0007 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:04,954] WARN Session 0x14c5d30232f0017 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2015-03-27 14:43:05,115] WARN Session 0x14c5d30232f0010 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

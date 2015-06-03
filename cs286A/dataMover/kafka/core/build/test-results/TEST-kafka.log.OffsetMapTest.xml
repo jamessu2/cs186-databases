@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.OffsetMapTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:05" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.137">
+  <properties/>
+  <testcase name="testBasicValidation" classname="kafka.log.OffsetMapTest" time="0.133"/>
+  <testcase name="testClear" classname="kafka.log.OffsetMapTest" time="0.004"/>
+  <system-out><![CDATA[[2015-03-27 14:43:05,199] WARN Session 0x14c5d30232f0011 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

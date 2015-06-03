@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.AddPartitionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:35:54" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="25.557">
+  <properties/>
+  <testcase name="testTopicDoesNotExist" classname="kafka.admin.AddPartitionsTest" time="5.04"/>
+  <testcase name="testWrongReplicaCount" classname="kafka.admin.AddPartitionsTest" time="4.435"/>
+  <testcase name="testIncrementPartitions" classname="kafka.admin.AddPartitionsTest" time="4.637"/>
+  <testcase name="testManualAssignmentOfReplicas" classname="kafka.admin.AddPartitionsTest" time="4.602"/>
+  <testcase name="testReplicaPlacement" classname="kafka.admin.AddPartitionsTest" time="6.841"/>
+  <system-out><![CDATA[[2015-03-27 14:36:02,205] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn:357)
+EndOfStreamException: Unable to read additional data from client sessionid 0x14c5d29be600002, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+[2015-03-27 14:36:06,630] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn:357)
+EndOfStreamException: Unable to read additional data from client sessionid 0x14c5d29cfb40002, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+[2015-03-27 14:36:17,691] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn:357)
+EndOfStreamException: Unable to read additional data from client sessionid 0x14c5d29f3cc0002, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

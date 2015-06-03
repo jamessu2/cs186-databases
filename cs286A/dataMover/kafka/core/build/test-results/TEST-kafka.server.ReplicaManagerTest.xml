@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ReplicaManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:44:46" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="1.228">
+  <properties/>
+  <testcase name="testHighWaterMarkDirectoryMapping" classname="kafka.server.ReplicaManagerTest" time="0.409"/>
+  <testcase name="testIllegalRequiredAcks" classname="kafka.server.ReplicaManagerTest" time="0.413"/>
+  <testcase name="testHighwaterMarkRelativeDirectoryMapping" classname="kafka.server.ReplicaManagerTest" time="0.406"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

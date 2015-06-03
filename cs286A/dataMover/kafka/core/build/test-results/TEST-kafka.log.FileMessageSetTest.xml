@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.FileMessageSetTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:00" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.034">
+  <properties/>
+  <testcase name="testIterationDoesntChangePosition" classname="kafka.log.FileMessageSetTest" time="0.005"/>
+  <testcase name="testIterationOverPartialAndTruncation" classname="kafka.log.FileMessageSetTest" time="0.002"/>
+  <testcase name="testFileSize" classname="kafka.log.FileMessageSetTest" time="0.003"/>
+  <testcase name="testSearch" classname="kafka.log.FileMessageSetTest" time="0.003"/>
+  <testcase name="testWriteTo" classname="kafka.log.FileMessageSetTest" time="0.006"/>
+  <testcase name="testRead" classname="kafka.log.FileMessageSetTest" time="0.001"/>
+  <testcase name="testIteratorWithLimits" classname="kafka.log.FileMessageSetTest" time="0.002"/>
+  <testcase name="testTruncate" classname="kafka.log.FileMessageSetTest" time="0.001"/>
+  <testcase name="testSizeInBytes" classname="kafka.log.FileMessageSetTest" time="0.003"/>
+  <testcase name="testIteratorIsConsistent" classname="kafka.log.FileMessageSetTest" time="0.001"/>
+  <testcase name="testWrittenEqualsRead" classname="kafka.log.FileMessageSetTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

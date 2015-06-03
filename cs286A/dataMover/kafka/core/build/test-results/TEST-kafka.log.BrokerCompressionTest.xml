@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.BrokerCompressionTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:00" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.058">
+  <properties/>
+  <testcase name="testBrokerSideCompression[0]" classname="kafka.log.BrokerCompressionTest" time="0.006"/>
+  <testcase name="testBrokerSideCompression[1]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[2]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[3]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[4]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[5]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[6]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[7]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[8]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[9]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[10]" classname="kafka.log.BrokerCompressionTest" time="0.005"/>
+  <testcase name="testBrokerSideCompression[11]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[12]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[13]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[14]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[15]" classname="kafka.log.BrokerCompressionTest" time="0.004"/>
+  <testcase name="testBrokerSideCompression[16]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[17]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <testcase name="testBrokerSideCompression[18]" classname="kafka.log.BrokerCompressionTest" time="0.002"/>
+  <testcase name="testBrokerSideCompression[19]" classname="kafka.log.BrokerCompressionTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

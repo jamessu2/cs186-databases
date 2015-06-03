@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.message.MessageWriterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:07" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.059">
+  <properties/>
+  <testcase name="testBufferingOutputStream" classname="kafka.message.MessageWriterTest" time="0.02"/>
+  <testcase name="testWithNoCompressionAttribute" classname="kafka.message.MessageWriterTest" time="0.016"/>
+  <testcase name="testWithKey" classname="kafka.message.MessageWriterTest" time="0.009"/>
+  <testcase name="testWithCompressionAttribute" classname="kafka.message.MessageWriterTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

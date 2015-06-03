@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.consumer.internals.HeartbeatTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:35:05" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.001">
+  <properties/>
+  <testcase name="testShouldHeartbeat" classname="org.apache.kafka.clients.consumer.internals.HeartbeatTest" time="0.001"/>
+  <testcase name="testShouldNotHeartbeat" classname="org.apache.kafka.clients.consumer.internals.HeartbeatTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

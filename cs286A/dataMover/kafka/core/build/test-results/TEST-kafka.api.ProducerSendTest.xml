@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.ProducerSendTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:39:55" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="14.088">
+  <properties/>
+  <testcase name="testFlush" classname="kafka.api.ProducerSendTest" time="2.479"/>
+  <testcase name="testAutoCreateTopic" classname="kafka.api.ProducerSendTest" time="2.28"/>
+  <testcase name="testClose" classname="kafka.api.ProducerSendTest" time="2.488"/>
+  <testcase name="testSendOffset" classname="kafka.api.ProducerSendTest" time="2.483"/>
+  <testcase name="testSerializer" classname="kafka.api.ProducerSendTest" time="1.869"/>
+  <testcase name="testSendToPartition" classname="kafka.api.ProducerSendTest" time="2.489"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

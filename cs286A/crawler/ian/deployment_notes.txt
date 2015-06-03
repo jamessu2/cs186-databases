@@ -1,0 +1,15 @@
+* need inotify-tools package for inotifywait:
+  sudo apt-get install inotify-tools
+
+* pyinotify, react, or inotifywait
+
+* required schema:
+    filename:
+    timestamp:
+    namespace:
+
+-----
+BY FRIDAY:
+* monitoring a directory
+* count # of expected files and write out to a temp file
+* wait until # of files in output dir == # of files expected, then tar the directory and scp to data mover

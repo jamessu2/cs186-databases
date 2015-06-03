@@ -1,0 +1,3 @@
+//compile an updated version of class, with avro.jar, jops.jar and the other classes in orignial jar
+
+javac -cp ../avro-1.7.7-unjar/:./jopt-simple-4.5.jar:./avroToos ./org/apache/avro/tool/DataFileReadTool.java 2> error

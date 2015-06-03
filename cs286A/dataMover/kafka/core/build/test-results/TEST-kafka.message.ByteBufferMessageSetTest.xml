@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.message.ByteBufferMessageSetTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:07" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.01">
+  <properties/>
+  <testcase name="testWriteTo" classname="kafka.message.ByteBufferMessageSetTest" time="0.002"/>
+  <testcase name="testIterator" classname="kafka.message.ByteBufferMessageSetTest" time="0.002"/>
+  <testcase name="testOffsetAssignment" classname="kafka.message.ByteBufferMessageSetTest" time="0.002"/>
+  <testcase name="testValidBytes" classname="kafka.message.ByteBufferMessageSetTest" time="0.001"/>
+  <testcase name="testValidBytesWithCompression" classname="kafka.message.ByteBufferMessageSetTest" time="0.001"/>
+  <testcase name="testSizeInBytes" classname="kafka.message.ByteBufferMessageSetTest" time="0.0"/>
+  <testcase name="testIteratorIsConsistent" classname="kafka.message.ByteBufferMessageSetTest" time="0.0"/>
+  <testcase name="testWrittenEqualsRead" classname="kafka.message.ByteBufferMessageSetTest" time="0.001"/>
+  <testcase name="testEquals" classname="kafka.message.ByteBufferMessageSetTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

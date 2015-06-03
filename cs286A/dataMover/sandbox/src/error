@@ -1,0 +1,12 @@
+./org/apache/avro/tool/DataFileReadTool.java:59: error: incompatible types
+    List<String> nargs = optionSet.nonOptionArguments();
+                                                     ^
+  required: List<String>
+  found:    List<CAP#1>
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+./org/apache/avro/tool/DataFileReadTool.java:72: error: cannot access FsInput
+      DataFileReader.openReader(Util.openSeekableFromFS(nargs.get(0)), reader);
+                                                       ^
+  class file for org.apache.avro.mapred.FsInput not found
+2 errors

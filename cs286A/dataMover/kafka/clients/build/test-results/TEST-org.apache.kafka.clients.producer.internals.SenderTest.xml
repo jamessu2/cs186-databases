@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.producer.internals.SenderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:35:06" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.013">
+  <properties/>
+  <testcase name="testSimple" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.009"/>
+  <testcase name="testRetries" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

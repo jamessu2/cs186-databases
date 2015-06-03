@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:35:05" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.236">
+  <properties/>
+  <testcase name="testStressfulSituation" classname="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" time="0.229"/>
+  <testcase name="testFull" classname="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" time="0.001"/>
+  <testcase name="testAppendLarge" classname="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" time="0.0"/>
+  <testcase name="testLinger" classname="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" time="0.0"/>
+  <testcase name="testPartialDrain" classname="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" time="0.0"/>
+  <testcase name="testNextReadyCheckDelay" classname="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" time="0.001"/>
+  <testcase name="testFlush" classname="org.apache.kafka.clients.producer.internals.RecordAccumulatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

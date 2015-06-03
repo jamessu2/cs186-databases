@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.integration.UncleanLeaderElectionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:42:06" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="51.301">
+  <properties/>
+  <testcase name="testUncleanLeaderElectionInvalidTopicOverride" classname="kafka.integration.UncleanLeaderElectionTest" time="0.847"/>
+  <testcase name="testUncleanLeaderElectionEnabledByTopicOverride" classname="kafka.integration.UncleanLeaderElectionTest" time="8.574"/>
+  <testcase name="testUncleanLeaderElectionEnabled" classname="kafka.integration.UncleanLeaderElectionTest" time="8.624"/>
+  <testcase name="testCleanLeaderElectionDisabledByTopicOverride" classname="kafka.integration.UncleanLeaderElectionTest" time="16.737"/>
+  <testcase name="testUncleanLeaderElectionDisabled" classname="kafka.integration.UncleanLeaderElectionTest" time="16.519"/>
+  <system-out><![CDATA[[2015-03-27 14:42:06,787] WARN Session 0x14c5d2f4daf000a for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn:1102)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

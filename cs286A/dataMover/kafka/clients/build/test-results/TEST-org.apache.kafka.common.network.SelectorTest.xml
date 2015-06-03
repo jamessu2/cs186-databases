@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.network.SelectorTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:35:06" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.472">
+  <properties/>
+  <testcase name="testServerDisconnect" classname="org.apache.kafka.common.network.SelectorTest" time="0.014"/>
+  <testcase name="testClientDisconnect" classname="org.apache.kafka.common.network.SelectorTest" time="0.017"/>
+  <testcase name="testCantSendWithInProgress" classname="org.apache.kafka.common.network.SelectorTest" time="0.005"/>
+  <testcase name="testCantSendWithoutConnecting" classname="org.apache.kafka.common.network.SelectorTest" time="0.003"/>
+  <testcase name="testNoRouteToHost" classname="org.apache.kafka.common.network.SelectorTest" time="0.053"/>
+  <testcase name="testConnectionRefused" classname="org.apache.kafka.common.network.SelectorTest" time="0.003"/>
+  <testcase name="testNormalOperation" classname="org.apache.kafka.common.network.SelectorTest" time="0.35"/>
+  <testcase name="testSendLargeRequest" classname="org.apache.kafka.common.network.SelectorTest" time="0.013"/>
+  <testcase name="testEmptyRequest" classname="org.apache.kafka.common.network.SelectorTest" time="0.003"/>
+  <testcase name="testExistingConnectionId" classname="org.apache.kafka.common.network.SelectorTest" time="0.002"/>
+  <testcase name="testMute" classname="org.apache.kafka.common.network.SelectorTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

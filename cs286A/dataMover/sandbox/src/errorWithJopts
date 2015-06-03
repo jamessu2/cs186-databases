@@ -1,0 +1,138 @@
+./org/apache/avro/tool/DataFileReadTool.java:59: error: incompatible types
+    List<String> nargs = optionSet.nonOptionArguments();
+                                                     ^
+  required: List<String>
+  found:    List<CAP#1>
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+./org/apache/avro/tool/Util.java:39: error: package org.apache.avro.mapred does not exist
+import org.apache.avro.mapred.FsInput;
+                             ^
+./org/apache/avro/tool/Util.java:40: error: package org.apache.hadoop.conf does not exist
+import org.apache.hadoop.conf.Configuration;
+                             ^
+./org/apache/avro/tool/Util.java:41: error: package org.apache.hadoop.fs does not exist
+import org.apache.hadoop.fs.FileStatus;
+                           ^
+./org/apache/avro/tool/Util.java:42: error: package org.apache.hadoop.fs does not exist
+import org.apache.hadoop.fs.FileSystem;
+                           ^
+./org/apache/avro/tool/Util.java:43: error: package org.apache.hadoop.fs does not exist
+import org.apache.hadoop.fs.Path;
+                           ^
+./org/apache/avro/tool/Util.java:97: error: cannot find symbol
+  static InputStream openFromFS(Path filename) 
+                                ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:108: error: cannot find symbol
+  static FsInput openSeekableFromFS(String filename) 
+         ^
+  symbol:   class FsInput
+  location: class Util
+./org/apache/avro/tool/Util.java:166: error: cannot find symbol
+  static List<Path> getFiles(String fileOrDirName) 
+              ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:194: error: cannot find symbol
+  static List<Path> getFiles(List<String> fileOrDirNames) 
+              ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:87: error: cannot find symbol
+    Path p = new Path(filename);
+    ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:87: error: cannot find symbol
+    Path p = new Path(filename);
+                 ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:88: error: cannot find symbol
+    return p.getFileSystem(new Configuration()).open(p);
+                               ^
+  symbol:   class Configuration
+  location: class Util
+./org/apache/avro/tool/Util.java:99: error: cannot find symbol
+    return filename.getFileSystem(new Configuration()).open(filename);
+                                      ^
+  symbol:   class Configuration
+  location: class Util
+./org/apache/avro/tool/Util.java:110: error: cannot find symbol
+    return new FsInput(new Path(filename), new Configuration());
+               ^
+  symbol:   class FsInput
+  location: class Util
+./org/apache/avro/tool/Util.java:110: error: cannot find symbol
+    return new FsInput(new Path(filename), new Configuration());
+                           ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:110: error: cannot find symbol
+    return new FsInput(new Path(filename), new Configuration());
+                                               ^
+  symbol:   class Configuration
+  location: class Util
+./org/apache/avro/tool/Util.java:122: error: cannot find symbol
+    Path p = new Path(filename);
+    ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:122: error: cannot find symbol
+    Path p = new Path(filename);
+                 ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:123: error: cannot find symbol
+    return new BufferedOutputStream(p.getFileSystem(new Configuration()).create(p));
+                                                        ^
+  symbol:   class Configuration
+  location: class Util
+./org/apache/avro/tool/Util.java:168: error: cannot find symbol
+    List<Path> pathList = new ArrayList<Path>();  
+         ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:168: error: cannot find symbol
+    List<Path> pathList = new ArrayList<Path>();  
+                                        ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:169: error: cannot find symbol
+    Path path = new Path(fileOrDirName);
+    ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:169: error: cannot find symbol
+    Path path = new Path(fileOrDirName);
+                    ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:170: error: cannot find symbol
+    FileSystem fs = path.getFileSystem(new Configuration());
+    ^
+  symbol:   class FileSystem
+  location: class Util
+./org/apache/avro/tool/Util.java:170: error: cannot find symbol
+    FileSystem fs = path.getFileSystem(new Configuration());
+                                           ^
+  symbol:   class Configuration
+  location: class Util
+./org/apache/avro/tool/Util.java:176: error: cannot find symbol
+      for (FileStatus status : fs.listStatus(path)) {
+           ^
+  symbol:   class FileStatus
+  location: class Util
+./org/apache/avro/tool/Util.java:196: error: cannot find symbol
+    ArrayList<Path> pathList = new ArrayList<Path>();
+              ^
+  symbol:   class Path
+  location: class Util
+./org/apache/avro/tool/Util.java:196: error: cannot find symbol
+    ArrayList<Path> pathList = new ArrayList<Path>();
+                                             ^
+  symbol:   class Path
+  location: class Util
+29 errors

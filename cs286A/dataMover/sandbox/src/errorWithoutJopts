@@ -1,0 +1,48 @@
+./org/apache/avro/tool/DataFileReadTool.java:24: error: package joptsimple does not exist
+import joptsimple.OptionParser;
+                 ^
+./org/apache/avro/tool/DataFileReadTool.java:25: error: package joptsimple does not exist
+import joptsimple.OptionSet;
+                 ^
+./org/apache/avro/tool/DataFileReadTool.java:26: error: package joptsimple does not exist
+import joptsimple.OptionSpec;
+                 ^
+./org/apache/avro/tool/DataFileReadTool.java:38: error: cannot find symbol
+public class DataFileReadTool implements Tool {
+                                         ^
+  symbol: class Tool
+./org/apache/avro/tool/DataFileReadTool.java:40: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+./org/apache/avro/tool/DataFileReadTool.java:45: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+./org/apache/avro/tool/DataFileReadTool.java:53: error: cannot find symbol
+    OptionParser optionParser = new OptionParser();
+    ^
+  symbol:   class OptionParser
+  location: class DataFileReadTool
+./org/apache/avro/tool/DataFileReadTool.java:53: error: cannot find symbol
+    OptionParser optionParser = new OptionParser();
+                                    ^
+  symbol:   class OptionParser
+  location: class DataFileReadTool
+./org/apache/avro/tool/DataFileReadTool.java:54: error: cannot find symbol
+    OptionSpec<Void> prettyOption = optionParser
+    ^
+  symbol:   class OptionSpec
+  location: class DataFileReadTool
+./org/apache/avro/tool/DataFileReadTool.java:57: error: cannot find symbol
+    OptionSet optionSet = optionParser.parse(args.toArray(new String[0]));
+    ^
+  symbol:   class OptionSet
+  location: class DataFileReadTool
+./org/apache/avro/tool/DataFileReadTool.java:72: error: cannot find symbol
+      DataFileReader.openReader(Util.openSeekableFromFS(nargs.get(0)), reader);
+                                ^
+  symbol:   variable Util
+  location: class DataFileReadTool
+./org/apache/avro/tool/DataFileReadTool.java:50: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+12 errors

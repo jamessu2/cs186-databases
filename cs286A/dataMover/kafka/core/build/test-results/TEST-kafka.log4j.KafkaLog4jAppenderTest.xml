@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log4j.KafkaLog4jAppenderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:05" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="1.942">
+  <properties/>
+  <testcase name="testLog4jAppends" classname="kafka.log4j.KafkaLog4jAppenderTest" time="1.262"/>
+  <testcase name="testKafkaLog4jConfigs" classname="kafka.log4j.KafkaLog4jAppenderTest" time="0.68"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.I0Itec.zkclient.ZkEventThread).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
+</testsuite>

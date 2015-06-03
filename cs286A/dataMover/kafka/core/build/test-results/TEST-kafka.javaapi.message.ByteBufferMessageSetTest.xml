@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.javaapi.message.ByteBufferMessageSetTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:00" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.006">
+  <properties/>
+  <testcase name="testSizeInBytesWithCompression" classname="kafka.javaapi.message.ByteBufferMessageSetTest" time="0.001"/>
+  <testcase name="testEqualsWithCompression" classname="kafka.javaapi.message.ByteBufferMessageSetTest" time="0.001"/>
+  <testcase name="testSizeInBytes" classname="kafka.javaapi.message.ByteBufferMessageSetTest" time="0.0"/>
+  <testcase name="testIteratorIsConsistent" classname="kafka.javaapi.message.ByteBufferMessageSetTest" time="0.001"/>
+  <testcase name="testWrittenEqualsRead" classname="kafka.javaapi.message.ByteBufferMessageSetTest" time="0.0"/>
+  <testcase name="testIteratorIsConsistentWithCompression" classname="kafka.javaapi.message.ByteBufferMessageSetTest" time="0.0"/>
+  <testcase name="testEquals" classname="kafka.javaapi.message.ByteBufferMessageSetTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

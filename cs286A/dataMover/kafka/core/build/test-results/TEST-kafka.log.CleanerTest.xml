@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.CleanerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:00" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.19">
+  <properties/>
+  <testcase name="testBuildOffsetMap" classname="kafka.log.CleanerTest" time="0.04"/>
+  <testcase name="testCleanSegmentsWithAbort" classname="kafka.log.CleanerTest" time="0.013"/>
+  <testcase name="testSegmentGrouping" classname="kafka.log.CleanerTest" time="0.019"/>
+  <testcase name="testCleaningWithDeletes" classname="kafka.log.CleanerTest" time="0.032"/>
+  <testcase name="testCleaningWithUnkeyedMessages" classname="kafka.log.CleanerTest" time="0.026"/>
+  <testcase name="testCleanSegments" classname="kafka.log.CleanerTest" time="0.059"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

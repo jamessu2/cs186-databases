@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.TopicCommandTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:37:52" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.054">
+  <properties/>
+  <testcase name="testConfigPreservationAcrossPartitionAlteration" classname="kafka.admin.TopicCommandTest" time="0.054"/>
+  <system-out><![CDATA[Created topic "test".
+Updated config for topic "test".
+WARNING: If partitions are increased for a topic that has a key, the partition logic or ordering of the messages will be affected
+Adding partitions succeeded!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

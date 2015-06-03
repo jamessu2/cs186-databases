@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.config.ConfigDefTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:35:06" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.026">
+  <properties/>
+  <testcase name="testBasicTypes" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.002"/>
+  <testcase name="testDefinedTwice" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="testBadInputs" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.002"/>
+  <testcase name="testInvalidDefaultRange" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.006"/>
+  <testcase name="testValidators" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.002"/>
+  <testcase name="testInvalidDefault" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testNullDefault" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.003"/>
+  <testcase name="testMissingRequired" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testInvalidDefaultString" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

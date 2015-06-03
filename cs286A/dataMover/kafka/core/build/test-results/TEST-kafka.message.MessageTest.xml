@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.message.MessageTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:07" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.019">
+  <properties/>
+  <testcase name="testIsHashable" classname="kafka.message.MessageTest" time="0.004"/>
+  <testcase name="testFieldValues" classname="kafka.message.MessageTest" time="0.01"/>
+  <testcase name="testChecksum" classname="kafka.message.MessageTest" time="0.002"/>
+  <testcase name="testEquality" classname="kafka.message.MessageTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.producer.SyncProducerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:30" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="8.54">
+  <properties/>
+  <testcase name="testProduceCorrectlyReceivesResponse" classname="kafka.producer.SyncProducerTest" time="1.242"/>
+  <testcase name="testProducerCanTimeout" classname="kafka.producer.SyncProducerTest" time="1.244"/>
+  <testcase name="testMessageSizeTooLargeWithAckZero" classname="kafka.producer.SyncProducerTest" time="1.244"/>
+  <testcase name="testReachableServer" classname="kafka.producer.SyncProducerTest" time="0.838"/>
+  <testcase name="testMessageSizeTooLarge" classname="kafka.producer.SyncProducerTest" time="1.046"/>
+  <testcase name="testEmptyProduceRequest" classname="kafka.producer.SyncProducerTest" time="0.844"/>
+  <testcase name="testProduceRequestWithNoResponse" classname="kafka.producer.SyncProducerTest" time="0.835"/>
+  <testcase name="testNotEnoughReplicas" classname="kafka.producer.SyncProducerTest" time="1.246"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.OffsetIndexTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:05" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.029">
+  <properties/>
+  <testcase name="truncate" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="lookupExtremeCases" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="appendTooMany" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="appendOutOfOrder" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="testReopen" classname="kafka.log.OffsetIndexTest" time="0.002"/>
+  <testcase name="randomLookupTest" classname="kafka.log.OffsetIndexTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

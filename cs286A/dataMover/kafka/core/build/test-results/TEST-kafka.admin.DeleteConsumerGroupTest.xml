@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.DeleteConsumerGroupTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:36:43" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="21.28">
+  <properties/>
+  <testcase name="testTopicWideDeleteInZK" classname="kafka.admin.DeleteConsumerGroupTest" time="2.912"/>
+  <testcase name="testConsumptionOnRecreatedTopicAfterTopicWideDeleteInZK" classname="kafka.admin.DeleteConsumerGroupTest" time="3.543"/>
+  <testcase name="testGroupTopicWideDeleteInZKDoesNothingForActiveGroupConsumingMultipleTopics" classname="kafka.admin.DeleteConsumerGroupTest" time="2.711"/>
+  <testcase name="testGroupTopicWideDeleteInZKForGroupConsumingOneTopic" classname="kafka.admin.DeleteConsumerGroupTest" time="3.146"/>
+  <testcase name="testGroupWideDeleteInZKDoesNothingForActiveConsumerGroup" classname="kafka.admin.DeleteConsumerGroupTest" time="2.928"/>
+  <testcase name="testGroupTopicWideDeleteInZKForGroupConsumingMultipleTopics" classname="kafka.admin.DeleteConsumerGroupTest" time="3.317"/>
+  <testcase name="testGroupWideDeleteInZK" classname="kafka.admin.DeleteConsumerGroupTest" time="2.721"/>
+  <system-out><![CDATA[[2015-03-27 14:37:03,294] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn:357)
+EndOfStreamException: Unable to read additional data from client sessionid 0x14c5d2ab4560001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

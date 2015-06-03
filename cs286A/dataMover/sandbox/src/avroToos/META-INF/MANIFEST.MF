@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Title: Apache Avro Tools
+Implementation-Version: 1.7.7
+Implementation-Vendor-Id: org.apache.avro
+Specification-Vendor: The Apache Software Foundation
+Build-Jdk: 1.7.0_45
+Built-By: cutting
+Specification-Title: Apache Avro Tools
+Created-By: Apache Maven
+Specification-Version: 1.7.7
+Main-Class: org.apache.avro.tool.Main
+Archiver-Version: Plexus Archiver
+

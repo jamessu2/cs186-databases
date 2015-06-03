@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unit.kafka.zk.ZKPathTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:45:12" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="0.081">
+  <properties/>
+  <testcase name="testCreatePersistentPathThrowsException" classname="unit.kafka.zk.ZKPathTest" time="0.01"/>
+  <testcase name="testCreatePersistentPath" classname="unit.kafka.zk.ZKPathTest" time="0.011"/>
+  <testcase name="testMakeSurePersistsPathExistsThrowsException" classname="unit.kafka.zk.ZKPathTest" time="0.009"/>
+  <testcase name="testMakeSurePersistsPathExists" classname="unit.kafka.zk.ZKPathTest" time="0.011"/>
+  <testcase name="testCreateEphemeralPathThrowsException" classname="unit.kafka.zk.ZKPathTest" time="0.008"/>
+  <testcase name="testCreateEphemeralPathExists" classname="unit.kafka.zk.ZKPathTest" time="0.01"/>
+  <testcase name="testCreatePersistentSequentialThrowsException" classname="unit.kafka.zk.ZKPathTest" time="0.008"/>
+  <testcase name="testCreatePersistentSequentialExists" classname="unit.kafka.zk.ZKPathTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

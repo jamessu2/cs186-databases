@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.DelayedOperationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-03-27T21:43:54" hostname="airbears2-10-142-35-31.AirBears2.1918.Berkeley.EDU" time="1.093">
+  <properties/>
+  <testcase name="testRequestSatisfaction" classname="kafka.server.DelayedOperationTest" time="0.202"/>
+  <testcase name="testRequestExpiry" classname="kafka.server.DelayedOperationTest" time="0.232"/>
+  <testcase name="testRequestPurge" classname="kafka.server.DelayedOperationTest" time="0.659"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
